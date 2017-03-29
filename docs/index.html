@@ -31,7 +31,7 @@
 <h3>Setup</h3>
 <p><a href="getworking.html">Getting a working part</a></p>
 
-<h3>Testing</h3>
+<h3>Testing process</h3>
 <ul>
 	<li>zip -u ../testPart.fzpz *.svg *.fzp</li>
 	<li>Fritzing ¦ File ¦ Open ¦ testPart.fzpz</li>
@@ -42,5 +42,35 @@
 	<li>edit untitled.svg</li>
 	<li>diffxml untiled.svg ref.svg</li>
 </ul>
+
+<h3>Testing History</h3>
+<p><a href="history.html">Testing log</a></p>
+<h3>Discoveries</h3>
+
+<h4>fzp</h4>
+<p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#fzp-format">FZP format</a> for a lot of useful details.</p>
+
+<h4>General SVG</h4>
+<p>Typically SVG files use 90 pixels per inch, but Illustrator uses 72 pixels per inch.  Fritzing might figure it out correctly, but editing the svg element to set the width and height attributes in inches (in) can work around the difference.<sup><a href="http://fritzing.org/pcb-custom-shape/">1</a></sup></p>
+<p>Terminal elements are optional in breadboard view.<sup><a href="https://weblogs.asp.net/bleroy/building-a-simple-fritzing-component">2</a></sup> When they do not exist, the center point of the connector pin graphics is used.</p>
+<p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#about-svgs">About SVGs</a>
+
+<h4>Schematic svg file</h4>
+<h5>From the supplied svg template file</h5>
+<pre>&lt;!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --></pre>
+<p>The template does not include a doctype, but does have the xmlns:inkscape attribute in the svg tag.</p>
+<p>The template does not include an enable-background attribute</p>
+<p>The svg element has a <code>Layer_1</code> id</p>
+<p>There are 3 top level groups, with ids of background, help, and schematic</p>
+<p>There are no references to connector or terminal</p>
+<h5>From the base working svg file</h5>
+<pre>&lt;!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --></pre>
+<p>Inspite of that, the svg tag includes an xmlns:inkscape attribute.  The x, y, width, height attributes are in pixels (px), starting from (0,0).  The viewBox and enable-background use the same coordinates, without units.</p>
+<p>The top level group wrapper <code>&lt;g id="schematic"></code> contains a single group <code>&lt;g id="layer1"></code> plus a pair of rectangle objects for each connection pin.  The rectanges have ids of "<code>connector«pinNumber»</code>" and "<code>connector«pinNumber»terminal</code>".  These are NOT part of the layer1 group, and do not have any stroke or style information.  Fill is set to <code>none</code>.  The pin numbers are not sequential, but match the (zero based) pin positions for a 14 pin DIP chip.  Other svg files have connector«n» ids, but only svg also has the terminals.</p>
+<p>The layer1 group has a transform attribute that translates by a fairly large amount (-202,-376).  In addition to the graphics for the part, it contains line elements (nested in more groups) with <code>stroke="#787878"</code> for the connector lines.  These do NOT have an id</p>
+
+<h4>PCB svg file</h4>
+<p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#more-svg-topics">More SVG topics</a> for a few PCB specific svg rules and options.
+
 	</body>
 </html>

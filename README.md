@@ -12,3 +12,9 @@ Fritzing export image as svg is dropping graphics for some parts and content.  T
 Reference Links
 * Fritzing home page http://fritzing.org/
 * Fritzing forums http://forum.fritzing.org/
+* Fritzing graphic standards http://fritzing.org/fritzings-graphic-standards/
+* fxp file format https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format
+  * rubber band legs
+  * internal connections
+  * spice modeling
+  * split schematic symbols

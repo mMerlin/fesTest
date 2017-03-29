@@ -1,0 +1,2 @@
+#! /bin/sh
+zip -u ../testPart.fzpz *.svg *.fzp
