@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>fesTest</title>
+		<meta name="description" content="Frizting Export SVG problem exploring">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body id="index">
+<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<h1>Fritzing Export SVG problem exploring</h1>
+<p>This github repository and associated githubio pages track and document exploration of what works, and does not work, creating Fritzing parts, then attempting to export the views as svg images.</p>
+
+<h2>The Problem</h2>
+<p>When creating Fritzing documents of circuits, then exporting the views to svg images, some content gets dropped.  This is seen mostly for custom parts.  Since the content does get included when exporting to png or jpeg images, there appears to be a problem with the svg export code.  However, since most parts export correctly, there is also some interaction with the way the parts have been created.  This is some exploration of that.  The svg and fzp files that go into an fzpx part file are manipulated in various ways.</p>
+<p>Environment</p>
+<ul>
+	<li>Fedora 24 x86_64</li>
+	<li>Fritzing Version 0.9.2 (b8d2d5970658f0bed09c661c9e)</li>
+</ul>
+
+<h2>The Process<h2>
+<h3>Setup</h3>
+<p>Getting a working part</p>
+<h3>Testing</h3>
+<ul>
+	<li>zip testPart.fzpz *.svg *.fzp</li>
+	<li>Fritzing ¦ Open ¦ testPart.fzpz</li>
+	<li>place the test part</li>
+	<li>Breadboard view ¦ Export ¦ image ¦ svg</li>
+	<li>Schematic view ¦ Export ¦ image ¦ svg</li>
+	<li>eog untitled.svg</li>
+	<li>edit untitled.svg</li>
+	<li>diffxml untiled.svg ref.svg</li>
+</ul>
+	</body>
+</html>
