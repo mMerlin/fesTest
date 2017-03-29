@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>get working</title>
+		<meta name="description" content="Get working part files">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body id="index">
+<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<h1>Get Working Fritzing Part</h1>
+<ul>
+	<li>Fritzing ¦ Breadboard view ¦ Parts, Find "relay"</li>
+	<li>«right click» DIP-Relay-D31A ¦ Export Part… ¦ DIP-Relay-D31A.fzpz</li>
+	<li>mkdir parts</li>
+	<li>cd parts</li>
+	<li>unzip ../DIP-Relay-D31A.fzpz</li>
+	<li>find /usr/share/fritzing/ -iname "*dip_relay*" -type f -print<br/>/usr/share/fritzing/parts/…<ul>
+			<li>svg/obsolete/schematic/0.3.schem.DIP_Relay_D31A_schematic.svg</li>
+			<li>svg/core/pcb/DIP_Relay_D31A_pcb.svg</li>
+			<li>svg/core/schematic/DIP_Relay_D31A_schematic.svg</li>
+			<li>svg/core/icon/DIP_Relay_D31A_icon.svg</li>
+			<li>svg/core/breadboard/DIP_Relay_D31A_breadboard.svg</li>
+			<li>core/DIP_Relay_D31A.fzp</li>
+		</ul></li>
+  <li>compare to core files: no differences<ul>
+			<li>diff part.DIP_Relay_D31A.fzp /usr/share/fritzing/parts/core/DIP_Relay_D31A.fzp</li>
+			<li>diff svg.breadboard.DIP_Relay_D31A_breadboard.svg /usr/share/fritzing/parts/svg/core/breadboard/DIP_Relay_D31A_breadboard.svg</li>
+			<li>diff svg.icon.DIP_Relay_D31A_icon.svg /usr/share/fritzing/parts/svg/core/icon/DIP_Relay_D31A_icon.svg</li>
+			<li>diff svg.pcb.DIP_Relay_D31A_pcb.svg /usr/share/fritzing/parts/svg/core/pcb/DIP_Relay_D31A_pcb.svg</li>
+			<li>diff svg.schematic.DIP_Relay_D31A_schematic.svg /usr/share/fritzing/parts/svg/core/schematic/DIP_Relay_D31A_schematic.svg</li>
+		</ul></li>
+	<li>Attempt to open part file<ul>
+      <li>Fritzing ¦ File ¦ Open ¦ DIP-Relay-D31A.fzpz<ul>
+          <li>There is already a part with id '71d4db74a3a0ec43d9303ddffee7361b' loaded into Fritzing.</li>
+        </ul></li>
+    </ul></li>
+  <li>Generate new guid, edit module id in fzp, regenerate part, retry</li>
+  <li>View the exported base_«view».svg files.  Looks good.</li>
+</ul>
+	</body>
+</html>
