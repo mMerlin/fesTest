@@ -41,11 +41,11 @@
 	<li>Schematic view ¦ Export ¦ as Image ¦ svg</li>
 	<li>eog untitled.svg</li>
 	<li>edit untitled.svg<ul>
-			<li>add just inside main part group with transform, to add background to make it easier to see (instead of the patterned transparent background)</li>
+			<li>add just inside main part group with transform, to add backgound to make it easier to see (instead of the patterned transparent backgound)</li>
 			<li>&lt;rect id="rectbck" height="86" x="203" y="366" fill="#F0FFFF" width="97"/>
 			<li>size and positioning intended to keep small transparent border for alignment reference</li>
 		</ul></li>
-	<li>xmldiff untitled.svg ref.svg</li>
+	<li>xmldiff untiled.svg ref.svg</li>
 	<li>exit Fritzing between tests, to make sure to get a clean environment</li>
 	<li>do no save imported parts, document changes, or My Parts bin changes on exit</li>
 </ul>
@@ -59,8 +59,9 @@
 
 <h4>General SVG</h4>
 <p>Typically SVG files use 90 pixels per inch, but Illustrator uses 72 pixels per inch.  Fritzing might figure it out correctly, but editing the svg element to set the width and height attributes in inches (in) can work around the difference.<sup><a href="http://fritzing.org/pcb-custom-shape/">1</a></sup></p>
-<p>Terminal elements are optional in breadboard view.<sup><a href="https://weblogs.asp.net/bleroy/building-a-simple-fritzing-component">2</a></sup> When they do not exist, the centre point of the connector pin graphics is used.</p>
+<p>Terminal elements are optional in breadboard view.<sup><a href="https://weblogs.asp.net/bleroy/building-a-simple-fritzing-component">2</a></sup> When they do not exist, the center point of the connector pin graphics is used.</p>
 <p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#about-svgs">About SVGs</a>
+<p>html style comments in the source svg file get carried through to the view export svg.</p>
 
 <h4>Breadboard svg file</h4>
 <p>the snapped 'zero' position varies a small amount from build to build, although the breadboard svg file was not touched.</p>
@@ -76,7 +77,7 @@
 <h5>From the base working svg file</h5>
 <pre>&lt;!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --></pre>
 <p>Inspite of that, the svg tag includes an xmlns:inkscape attribute.  The x, y, width, height attributes are in pixels (px), starting from (0,0).  The viewBox and enable-background use the same coordinates, without units.</p>
-<p>The top level group wrapper <code>&lt;g id="schematic"></code> contains a single group <code>&lt;g id="layer1"></code> plus a pair of rectangle objects for each connection pin.  The rectangles have ids of "<code>connector«pinNumber»</code>" and "<code>connector«pinNumber»terminal</code>".  These are NOT part of the layer1 group, and do not have any stroke or style information.  Fill is set to <code>none</code>.  The pin numbers are not sequential, but match the (zero based) pin positions for a 14 pin DIP chip.  Other svg files have connector«n» ids, but only svg also has the terminals.</p>
+<p>The top level group wrapper <code>&lt;g id="schematic"></code> contains a single group <code>&lt;g id="layer1"></code> plus a pair of rectangle objects for each connection pin.  The rectanges have ids of "<code>connector«pinNumber»</code>" and "<code>connector«pinNumber»terminal</code>".  These are NOT part of the layer1 group, and do not have any stroke or style information.  Fill is set to <code>none</code>.  The pin numbers are not sequential, but match the (zero based) pin positions for a 14 pin DIP chip.  Other svg files have connector«n» ids, but only svg also has the terminals.</p>
 <p>The layer1 group has a transform attribute that translates by a fairly large amount (-202,-376).  In addition to the graphics for the part, it contains line elements (nested in more groups) with <code>stroke="#787878"</code> for the connector lines.  These do NOT have an id</p>
 
 <h4>PCB svg file</h4>

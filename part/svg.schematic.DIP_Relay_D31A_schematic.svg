@@ -45,32 +45,19 @@
 
 		<text id="label" transform="matrix(1 0 0 1 225.3046 385.952)" font-family="'Droid Sans'" font-size="5.5">relay</text>
 	</g>
-		<g fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"  transform="translate(0,0)">
-			<g>
-					<line x1="54" y1="65.3" x2="62.7" y2="65.3"/>
-			</g>
-			<g>
-					<line x1="54" y1="58.1" x2="62.7" y2="58.1"/>
-			</g>
-			<g>
-					<line x1="54" y1="22.1" x2="62.7" y2="22.1"/>
-			</g>
-			<g>
-					<line x1="54" y1="14.9" x2="62.7" y2="14.9"/>
-			</g>
-			<g>
-					<line x1="0" y1="65.3" x2="8.7" y2="65.3"/>
-			</g>
-			<g>
-					<line x1="0" y1="58.1" x2="8.7" y2="58.1"/>
-			</g>
-			<g>
-					<line x1="0" y1="22.1" x2="8.7" y2="22.1"/>
-			</g>
-			<g>
-					<line x1="0" y1="14.9" x2="8.7" y2="14.9"/>
-			</g>
-		</g>
+	<g fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"  transform="translate(0,0)">
+		<line x1="54" y1="65.3" x2="62.7" y2="65.3"/>
+		<line x1="54" y1="58.1" x2="62.7" y2="58.1"/>
+		<line x1="54" y1="22.1" x2="62.7" y2="22.1"/>
+		<line x1="54" y1="14.9" x2="62.7" y2="14.9"/>
+		<!-- <line x1="0.4" y1="65.3" x2="8.8" y2="65.3"/> -->
+		<line x1="0" y1="65.3" x2="8.7" y2="65.3"/>
+		<line x1="0" y1="58.1" x2="8.7" y2="58.1"/>
+		<line x1="0" y1="22.1" x2="8.7" y2="22.1"/>
+		<line x1="0" y1="14.9" x2="8.7" y2="14.9"/>
+	</g>
+	<!-- <line x1="0" y1="64.787" x2="6.666" y2="65.78" fill="none" stroke="#f00000" stroke-width="0.1"/> -->
+	<!-- <line x1="0" y1="64.787" x2="0.232" y2="65.78" fill="none" stroke="#00f000" stroke-width="0.1"/> -->
 	<rect id="connector6" x="0" y="64.787" fill="none" width="6.666" height="0.993"/>
 	<rect id="connector6terminal" x="0" y="64.787" fill="none" width="0.232" height="0.993"/>
 	<rect id="connector7" x="55.813" y="64.79" fill="none" width="6.854" height="0.994"/>
