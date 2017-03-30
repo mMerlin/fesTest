@@ -87,25 +87,22 @@
 <h3>test08</h3>
 <p>add connector6 id to line element, and remove original connector6 rect element. Connectors work in Fritzing, test08a_schem.svg content looks good, back to base orientation.</p>
 <p>add matching connector«n» ids to the rest of the connector pin lines, and remove the rect elements with connector«n» ids. test08b_schem.svg content looks good, though again rotated 90 degrees.</p>
-<p>cleanup connector«n»terminal rect element position and size.  Set the center of the rectangle to the defined edge of the schematic graphics (it extends outside to main range rectangle). test08c_schem.svg content looks good, though again rotated 90 degrees.</p>
-<p>This is now down to a fairly minimal schematic part graphic.  It is only 69 lines, 3782 bytes while the Fritzing schematice template file is 88 lines (some blank), 5971 bytes.  This is smaller due to moving common attribute values to containing group element.  The template also has a few extra example graphic elements.</p>
+<p>cleanup connector«n»terminal rect element position and size. Set the center of the rectangle to the defined edge of the schematic graphics (it extends outside to main range rectangle). test08c_schem.svg content looks good, though again rotated 90 degrees.</p>
+<p>This is now down to a fairly minimal schematic part graphic. It is only 69 lines, 3782 bytes while the Fritzing schematice template file is 88 lines (some blank), 5971 bytes. This is smaller due to moving common attribute values to containing group element. The template also has a few extra example graphic elements.</p>
 <p>Recalculate and fix the rest of the connector«n»terminal rect element position and size values. test08d_schem.svg content looks good, though again rotated 90 degrees.</p>
 
 <h3>test09</h3>
 <p>Bring some of the updates from the schematic template file into the working svg.</p>
+<p>Set the svg element attributes: version, baseProfile, and id to match the template file: 1.2, tiny, Layer_1. Add full size (as viewBox) background rectangle outside of schematic group. This DOES get carried into Fritzing view, but not exported to svg image. Useful for viewing raw svg schematic file, without the hatched transparent background. Add duplicate rectangle at the top of the schematic group, commented out, to allow easy addition of background when viewing exported svg. test09a_schem.svg content looks good, rotated 90 degrees from base.</p>
+<p>Remove svg element xmlns:… attributes that are not in the template. Add 0.1 inch help reference block that will be included in Fritzing, but not exported to the view svg. Add xmlns:xml namespace attribute to schematic group. Remove layer1 id from group. test09b_schem.svg content looks good, rotated 90 degrees from base.</p>
+
 <pre>
-svg version; baseProfile; id;
-remove layer1 id from group
-add the help group to see where the 0.1 in square ends up
-add xmlns:xml namespace attribute to schematic group
 see about removing that large offset transform
-background rectangle should be at (7.2,7.2) with width and height that are integer multiples of 7.2
-- if have a non-zero width stroke, adjust x,y by half the stroke width, and the width and height by the full stroke width.
 oddity: the template has pin connection lines, but no connector… ids
 </pre>
 
 <h3>test-future</h3>
-<p>There is still some cleanup needed for the used schematic graphics, to get things to land properly on the 0.1 inch grid.  It is near time to try modifying the breadboard svg file, so see if there is an interaction between them.  By itself, the schematic svg file is small, simple structure, and working.</p>
+<p>There is still some cleanup needed for the used schematic graphics, to get things to land properly on the 0.1 inch grid. It is near time to try modifying the breadboard svg file, so see if there is an interaction between them. By itself, the schematic svg file is small, simple structure, and working.</p>
 <pre>
 relay, even SPST, could use the split schematic: the coil and each switch could be separated on the schematic.
 </pre>

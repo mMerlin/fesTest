@@ -20,8 +20,8 @@
 <p>This <a href="https://github.com/mMerlin/fesTest">github repository</a> and associated <a href="https://mmerlin.github.io/fesTest/">githubio pages</a> track and document exploration of what works, and does not work, creating <a href="http://fritzing.org/">Fritzing</a> <a href="http://fritzing.org/parts/">parts</a>, then attempting to export the views as svg images.</p>
 
 <h2>The Problem</h2>
-<p>When creating Fritzing documents of circuits, then exporting the views to svg images, some content gets dropped.  This is seen mostly for custom parts.  Since the content does get included when exporting to png or jpeg images, there appears to be a problem with the svg export code.  However, since most parts export correctly, there is also some interaction with the way the parts have been created.  This is some exploration of that.  The svg and fzp files that go into an fzpx part file are manipulated in various ways.</p>
-<p>The svg export also gets the automatic text rotation wrong for both part rotations and flips.  The schematic view, and png export look correct.
+<p>When creating Fritzing documents of circuits, then exporting the views to svg images, some content gets dropped. This is seen mostly for custom parts. Since the content does get included when exporting to png or jpeg images, there appears to be a problem with the svg export code. However, since most parts export correctly, there is also some interaction with the way the parts have been created. This is some exploration of that. The svg and fzp files that go into an fzpx part file are manipulated in various ways.</p>
+<p>The svg export also gets the automatic text rotation wrong for both part rotations and flips. The schematic view, and png export look correct.
 <p>Environment</p>
 <ul>
 	<li>Fedora 24 x86_64</li>
@@ -58,7 +58,7 @@
 <p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#fzp-format">FZP format</a> for a lot of useful details.</p>
 
 <h4>General SVG</h4>
-<p>Typically SVG files use 90 pixels per inch, but Illustrator uses 72 pixels per inch.  Fritzing might figure it out correctly, but editing the svg element to set the width and height attributes in inches (in) can work around the difference.<sup><a href="http://fritzing.org/pcb-custom-shape/">1</a></sup></p>
+<p>Typically SVG files use 90 pixels per inch, but Illustrator uses 72 pixels per inch. Fritzing might figure it out correctly, but editing the svg element to set the width and height attributes in inches (in) can work around the difference.<sup><a href="http://fritzing.org/pcb-custom-shape/">1</a></sup></p>
 <p>Terminal elements are optional in breadboard view.<sup><a href="https://weblogs.asp.net/bleroy/building-a-simple-fritzing-component">2</a></sup> When they do not exist, the center point of the connector pin graphics is used.</p>
 <p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#about-svgs">About SVGs</a>
 <p>html style comments in the source svg file get carried through to the view export svg.</p>
@@ -76,9 +76,12 @@
 <p>There are no references to connector or terminal</p>
 <h5>From the base working svg file</h5>
 <pre>&lt;!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --></pre>
-<p>Inspite of that, the svg tag includes an xmlns:inkscape attribute.  The x, y, width, height attributes are in pixels (px), starting from (0,0).  The viewBox and enable-background use the same coordinates, without units.</p>
-<p>The top level group wrapper <code>&lt;g id="schematic"></code> contains a single group <code>&lt;g id="layer1"></code> plus a pair of rectangle objects for each connection pin.  The rectanges have ids of "<code>connector«pinNumber»</code>" and "<code>connector«pinNumber»terminal</code>".  These are NOT part of the layer1 group, and do not have any stroke or style information.  Fill is set to <code>none</code>.  The pin numbers are not sequential, but match the (zero based) pin positions for a 14 pin DIP chip.  Other svg files have connector«n» ids, but only svg also has the terminals.</p>
-<p>The layer1 group has a transform attribute that translates by a fairly large amount (-202,-376).  In addition to the graphics for the part, it contains line elements (nested in more groups) with <code>stroke="#787878"</code> for the connector lines.  These do NOT have an id</p>
+<p>Inspite of that, the svg tag includes an xmlns:inkscape attribute. The x, y, width, height attributes are in pixels (px), starting from (0,0). The viewBox and enable-background use the same coordinates, without units.</p>
+<p>The top level group wrapper <code>&lt;g id="schematic"></code> contains a single group <code>&lt;g id="layer1"></code> plus a pair of rectangle objects for each connection pin. The rectanges have ids of "<code>connector«pinNumber»</code>" and "<code>connector«pinNumber»terminal</code>". These are NOT part of the layer1 group, and do not have any stroke or style information. Fill is set to <code>none</code>. The pin numbers are not sequential, but match the (zero based) pin positions for a 14 pin DIP chip. Other svg files have connector«n» ids, but only svg also has the terminals.</p>
+<p>The layer1 group has a transform attribute that translates by a fairly large amount (-202,-376). In addition to the graphics for the part, it contains line elements (nested in more groups) with <code>stroke="#787878"</code> for the connector lines. These do NOT have an id</p>
+<p>To match the standard 0.1 inch snap grid, the complete schematic graphics should start at (0,0), and be multiples of 0.1 in width and height. That will be multiples of 7.2 or 9.0 px. Rectangular schematic symbols that have pin connections around the outside should have a background rectangle that matches the viewBox, but inset by 0.1 inch on each side that any connection pins exist. That inset needs to be adjusted by an addition 0.5 of the background rectangle stroke width (which could be zero). That means adding 0.5 * stroke width to the x and y rect element coordinates, and subtracting 1.0 * stroke width from the width and height.</p>
+<p>To be tested, but it appears that Fritzing aligns (at least) the schematic symbol position (origin) based on the (first?) detected pin location. Not on the viewBox origin. Symptoms make it look like the viewBox origin is not on a grid boundary, but the terminal end of the first pin is.</p>
+<p>Graphics content in the schematic svg file that is NOT inside of the schematic (id) group is visible in the Fritzing view, but does not get exported to the svg image. However, it DOES get exported to png.  Exporting to png even includes the current highlight / selected element dashed border.  Is the whole problem simpily graphics that is not inside the appropriate view/layer group?  connector«n»terminal graphics is fine outside of the group, because that is functionality for Fritzing, and does not show on the export anyway.</p>
 
 <h4>PCB svg file</h4>
 <p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#more-svg-topics">More SVG topics</a> for a few PCB specific svg rules and options.

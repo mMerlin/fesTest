@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.47814in' height='1.12258in' viewBox='0 0 106.426 80.826' >
+<g partID='854502920'><g transform='translate(76.585,18.159)' ><g transform='matrix(0,1,-1,0,0,0)'  ><g id="schematic">
+<!-- <rect x="0" y="0" fill="#F2F2F2" width="62.667" height="76.585"/> -->
+<!-- uncomment previous to add background to exported svg -->
+<g transform="matrix(1, 0, 0, 1, -201.998, -375.873)">
+<g id="layer1">
+<rect stroke="#000000" stroke-width="0.9" stroke-linejoin="round" width="45.265" id="rect5" height="76.1" x="210.715" y="376.359" fill="#FFFFFF" stroke-linecap="round"/>
+<!-- part body border and background -->
+<g font-family="'Droid Sans'" id="label0" font-size="2" fill="#787878">
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 439.167)">
+<text>7</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 431.967)">
+<text>6-</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 395.966)">
+<text>2+</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 388.765)">
+<text>1</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 439.167)">
+<text>8</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 431.967)">
+<text>9</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 395.966)">
+<text>13</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 388.765)">
+<text>14</text>
+</g>
+</g>
+</g>
+<g transform="matrix(1.25, 0, 0, 1.25, 201.949, 375.78)">
+<g id="g3256">
+<path stroke="#000000" stroke-width="0.4" stroke-linejoin="round" id="path3892" d="M6.918,46.575l12.634,0l0,-4.979l0.098,0c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.123,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.909,2.032,-2.031c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032l-0.098,0l0,-3.521L6.918,17.758" fill="none" stroke-linecap="round"/>
+</g>
+</g>
+<!-- coil graphic -->
+<g transform="matrix(1, 0, 0, 1, 225.305, 385.952)">
+<text font-family="'Droid Sans'" id="label" font-size="5.5">relay</text>
+</g>
+</g>
+</g>
+<g transform="translate(0,0)">
+<g stroke="#787878" stroke-width="0.7" stroke-linejoin="round" fill="none" stroke-linecap="round">
+<line id="connector0" y1="14.9" y2="14.9" x1="0.4" x2="8.8"/>
+<line id="connector1" y1="22.1" y2="22.1" x1="0.4" x2="8.8"/>
+<line id="connector5" y1="58.1" y2="58.1" x1="0.4" x2="8.8"/>
+<line id="connector6" y1="65.3" y2="65.3" x1="0.4" x2="8.8"/>
+<line id="connector7" y1="65.3" y2="65.3" x1="53.9" x2="62.3"/>
+<line id="connector8" y1="58.1" y2="58.1" x1="53.9" x2="62.3"/>
+<line id="connector12" y1="22.1" y2="22.1" x1="53.9" x2="62.3"/>
+<line id="connector13" y1="14.9" y2="14.9" x1="53.9" x2="62.3"/>
+</g>
+</g>
+<!-- <g stroke="#f00000" stroke-width="0.1" > -->
+<g width="1" id="connector0terminal" height="1" x="-0.5" y="14.4" fill="none"/>
+<g width="1" id="connector1terminal" height="1" x="-0.5" y="21.6" fill="none"/>
+<g width="1" id="connector5terminal" height="1" x="-0.5" y="57.6" fill="none"/>
+<g width="1" id="connector6terminal" height="1" x="-0.5" y="64.8" fill="none"/>
+<g width="1" id="connector7terminal" height="1" x="62.2" y="64.8" fill="none"/>
+<g width="1" id="connector8terminal" height="1" x="62.2" y="57.6" fill="none"/>
+<g width="1" id="connector12terminal" height="1" x="62.2" y="21.6" fill="none"/>
+<g width="1" id="connector13terminal" height="1" x="62.2" y="14.4" fill="none"/>
+<!-- </g> -->
+</g>
+</g></g></g><g partID='854502920' id='partLabel'><g transform='translate(69.626,0)' ><g font-size='5' font-style='normal' font-weight='normal' fill='#000000' font-family="'DroidSans'" id='schematicLabel' fill-opacity='1' stroke='none' ><text x='0' y='3.75'>DIP-Relay1</text><text x='0' y='8.75'>D31A*</text></g></g></g></svg>
