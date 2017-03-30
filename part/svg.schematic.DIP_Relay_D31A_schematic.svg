@@ -41,43 +41,33 @@
 				c1.122,0,2.032-0.91,2.032-2.032c0-1.122-0.91-2.031-2.032-2.031c1.122,0,2.032-0.909,2.032-2.031
 				c0-1.122-0.91-2.032-2.032-2.032c1.122,0,2.032-0.91,2.032-2.032c0-1.122-0.91-2.032-2.032-2.032c1.122,0,2.032-0.91,2.032-2.032
 				c0-1.122-0.91-2.032-2.032-2.032h-0.098v-3.521H6.918"/>
-		</g>
+		</g><!-- coil graphic -->
 
 		<text id="label" transform="matrix(1 0 0 1 225.3046 385.952)" font-family="'Droid Sans'" font-size="5.5">relay</text>
-		<g>
+		<g fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="255.98" y1="441.16" x2="264.666" y2="441.16"/>
+					<line x1="255.98" y1="441.16" x2="264.666" y2="441.16"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="255.98" y1="433.96" x2="264.666" y2="433.96"/>
+					<line x1="255.98" y1="433.96" x2="264.666" y2="433.96"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="255.98" y1="397.959" x2="264.666" y2="397.959"/>
+					<line x1="255.98" y1="397.959" x2="264.666" y2="397.959"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="255.98" y1="390.759" x2="264.666" y2="390.759"/>
-			</g>
-		</g>
-		<g>
-			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="201.998" y1="441.156" x2="210.684" y2="441.156"/>
+					<line x1="255.98" y1="390.759" x2="264.666" y2="390.759"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="201.998" y1="433.956" x2="210.684" y2="433.956"/>
+					<line x1="201.998" y1="441.156" x2="210.684" y2="441.156"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="201.998" y1="397.955" x2="210.684" y2="397.955"/>
+					<line x1="201.998" y1="433.956" x2="210.684" y2="433.956"/>
 			</g>
 			<g>
-
-					<line fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" x1="201.998" y1="390.755" x2="210.684" y2="390.755"/>
+					<line x1="201.998" y1="397.955" x2="210.684" y2="397.955"/>
+			</g>
+			<g>
+					<line x1="201.998" y1="390.755" x2="210.684" y2="390.755"/>
 			</g>
 		</g>
 	</g>

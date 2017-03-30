@@ -1,5 +1,5 @@
 # Fritzing Export SVG image Testing
-Explore problems exporting breadboard and schematic views to svg images from Frizting.
+Explore problems exporting breadboard and schematic views to svg images from Fritzing.
 
 See the [githubio](https://mmerlin.github.io/fesTest/) page.
 
@@ -13,8 +13,8 @@ Reference Links
 * Fritzing home page http://fritzing.org/
 * Fritzing forums http://forum.fritzing.org/
 * Fritzing graphic standards http://fritzing.org/fritzings-graphic-standards/
-* fxp file format https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format
+* fzp file format https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format
   * rubber band legs
   * internal connections
-  * spice modeling
+  * spice modelling
   * split schematic symbols

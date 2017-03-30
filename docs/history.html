@@ -35,7 +35,7 @@
 <p>Open schematic svg with inkscape, and save as Plain SVG. Inkscape generated file is considerable larger. 12453 versus 8532 bytes</p>
 <ul>
   <li>~/development/repos/xmldiffs/xmldiffs.py /usr/share/fritzing/parts/svg/core/schematic/DIP_Relay_D31A_schematic.svg ./svg.schematic.DIP_Relay_D31A_schematic.svg<ul>
-      <li>Considerable differences though enough common to maintain synchroization.<ul>
+      <li>Considerable differences though enough common to maintain synchronization.<ul>
           <li>added defs element</li>
           <li>added metadata element</li>
           <li>added id attributes</li>
@@ -51,11 +51,12 @@
 <ul>
   <li>move pin label text attributes from text elements to containing group<ul>
       <li>svg view export rotated 90 degrees clockwise from base, same as inkscape version</li>
-      <li>test03a_schem.svg Content looks good</li>
+      <li>test03a_schem.svg content looks good</li>
     </ul></li>
-  <li>merge pin label text groups. svg export looks good. Back to same orientation as base.</li>
-  <li>remove enable-background attributes: pin label text group and svg element. svg export looks good. Back to same orientation as base.</li>
-  <li>remove all but coil from internal graphics and set internal text to relay.</li>
+  <li>merge pin label text groups. test03b_schem.svg export looks good. Back to same orientation as base.</li>
+  <li>remove enable-background attributes: pin label text group and svg element. test03c_schem.svg export looks good. Back to same orientation as base.</li>
+  <li>remove all but coil from internal graphics and set internal text to relay. test03d_schem.svg export looks good.</li>
+  <li>move pin line attributes from line elements to containing group.  merge pin line groups.  test03e_schem.svg export looks good.  The eh, ev, er tests have all the content, but the text elements are incorrectly rotated.</li>
 </ul>
 	</body>
 </html>
