@@ -46,33 +46,24 @@
 		<text id="label" transform="matrix(1 0 0 1 225.3046 385.952)" font-family="'Droid Sans'" font-size="5.5">relay</text>
 	</g>
 	<g fill="none" stroke="#787878" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"  transform="translate(0,0)">
-		<line x1="54" y1="65.3" x2="62.7" y2="65.3"/>
-		<line x1="54" y1="58.1" x2="62.7" y2="58.1"/>
-		<line x1="54" y1="22.1" x2="62.7" y2="22.1"/>
-		<line x1="54" y1="14.9" x2="62.7" y2="14.9"/>
-		<!-- <line x1="0.4" y1="65.3" x2="8.8" y2="65.3"/> -->
-		<line x1="0" y1="65.3" x2="8.7" y2="65.3"/>
-		<line x1="0" y1="58.1" x2="8.7" y2="58.1"/>
-		<line x1="0" y1="22.1" x2="8.7" y2="22.1"/>
-		<line x1="0" y1="14.9" x2="8.7" y2="14.9"/>
+		<line x1="0.4" y1="14.9" x2="8.8" y2="14.9" id="connector0"/>
+		<line x1="0.4" y1="22.1" x2="8.8" y2="22.1" id="connector1"/>
+		<line x1="0.4" y1="58.1" x2="8.8" y2="58.1" id="connector5"/>
+		<line x1="0.4" y1="65.3" x2="8.8" y2="65.3" id="connector6"/>
+		<line x1="53.9" y1="65.3" x2="62.3" y2="65.3" id="connector7"/>
+		<line x1="53.9" y1="58.1" x2="62.3" y2="58.1" id="connector8"/>
+		<line x1="53.9" y1="22.1" x2="62.3" y2="22.1" id="connector12"/>
+		<line x1="53.9" y1="14.9" x2="62.3" y2="14.9" id="connector13"/>
 	</g>
-	<!-- <line x1="0" y1="64.787" x2="6.666" y2="65.78" fill="none" stroke="#f00000" stroke-width="0.1"/> -->
-	<!-- <line x1="0" y1="64.787" x2="0.232" y2="65.78" fill="none" stroke="#00f000" stroke-width="0.1"/> -->
-	<rect id="connector6" x="0" y="64.787" fill="none" width="6.666" height="0.993"/>
-	<rect id="connector6terminal" x="0" y="64.787" fill="none" width="0.232" height="0.993"/>
-	<rect id="connector7" x="55.813" y="64.79" fill="none" width="6.854" height="0.994"/>
-	<rect id="connector7terminal" x="62.583" y="64.79" fill="none" width="0.084" height="0.994"/>
-	<rect id="connector8" x="54.874" y="57.684" fill="none" width="7.752" height="0.806"/>
-	<rect id="connector8terminal" x="62.324" y="57.684" fill="none" width="0.303" height="0.806"/>
-	<rect id="connector12" x="56.378" y="21.589" fill="none" width="6.289" height="0.994"/>
-	<rect id="connector12terminal" x="62.474" y="21.589" fill="none" width="0.193" height="0.994"/>
-	<rect id="connector13" x="56.001" y="14.388" fill="none" width="6.666" height="0.994"/>
-	<rect id="connector13terminal" x="62.435" y="14.388" fill="none" width="0.232" height="0.994"/>
-	<rect id="connector0" x="0" y="14.438" fill="none" width="6.371" height="0.888"/>
-	<rect id="connector0terminal" x="0" y="14.438" fill="none" width="0.276" height="0.888"/>
-	<rect id="connector1" x="0" y="21.585" fill="none" width="5.721" height="0.994"/>
-	<rect id="connector1terminal" x="0" y="21.585" fill="none" width="0.303" height="0.994"/>
-	<rect id="connector5" x="0" y="57.492" fill="none" width="5.91" height="0.994"/>
-	<rect id="connector5terminal" x="0" y="57.492" fill="none" width="0.153" height="0.994"/>
+	<!-- <g stroke="#f00000" stroke-width="0.1" > -->
+	<rect id="connector0terminal" x="-0.5" y="14.4" fill="none" width="1" height="1"/>
+	<rect id="connector1terminal" x="0" y="21.6" fill="none" width="0.2" height="1"/>
+	<rect id="connector5terminal" x="0" y="57.6" fill="none" width="0.2" height="1"/>
+	<rect id="connector6terminal" x="0" y="64.8" fill="none" width="0.2" height="1"/>
+	<rect id="connector7terminal" x="62.5" y="64.8" fill="none" width="0.2" height="1"/>
+	<rect id="connector8terminal" x="62.5" y="57.6" fill="none" width="0.2" height="1"/>
+	<rect id="connector12terminal" x="62.5" y="21.6" fill="none" width="0.2" height="1"/>
+	<rect id="connector13terminal" x="62.5" y="14.4" fill="none" width="0.2" height="1"/>
+	<!-- </g> -->
 </g>
 </svg>

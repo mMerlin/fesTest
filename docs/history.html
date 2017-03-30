@@ -82,7 +82,12 @@
 <p>reduce the transform offset to (0,0) adjusting the line x and y attributes to match. Tweak numbers for consistency, and round to nicer multiples. 7.2 px per 0.1 inch step between pins. Currently each pin line is 8.7 px, or .12 inches long. test06_schem.svg content looks good, though again rotated 90 degrees.</p>
 
 <h3>test07</h3>
-<p>move the connector pin line elements outside of their (no attributes) container groups, and delete the now empty groups (still in the group with the common attributes).</p>
+<p>move the connector pin line elements outside of their (no attributes) container groups, and delete the now empty groups (still in the group with the common attributes). test07a_schem.svg content looks good, though again rotated 90 degrees.</p>
+
+<h3>test08</h3>
+<p>add connector6 id to line element, and remove original connector6 rect element. Connectors work in Fritzing, test08a_schem.svg content looks good, back to base orientation.</p>
+<p>add matching connector«n» ids to the rest of the connector pin lines, and remove the rect elements with connector«n» ids. test08b_schem.svg content looks good, though again rotated 90 degrees.</p>
+<p>cleanup connector«n»terminal rect element position and size.  Set the center of the rectangle to the defined edge of the schematic graphics (it extends outside to main range rectangle). test08c_schem.svg content looks good, though again rotated 90 degrees.</p>
 
 	</body>
 </html>

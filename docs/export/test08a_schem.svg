@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.38149in' height='1.21924in' viewBox='0 0 99.467 87.785' >
+<g partID='854502920'><g transform='translate(0,11.2)' ><g id="schematic">
+<g transform="matrix(1, 0, 0, 1, -201.998, -375.873)">
+<g id="layer1">
+<rect width="45.265" stroke="#000000" fill="#FFFFFF" stroke-linejoin="round" height="76.1" stroke-linecap="round" stroke-width="0.9" x="210.715" y="376.359" id="rect5"/>
+<!-- part body border and background -->
+<g fill="#787878" font-size="2" font-family="'Droid Sans'" id="label0">
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 439.167)">
+<text>7</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 431.967)">
+<text>6-</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 395.966)">
+<text>2+</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 388.765)">
+<text>1</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 439.167)">
+<text>8</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 431.967)">
+<text>9</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 395.966)">
+<text>13</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 388.765)">
+<text>14</text>
+</g>
+</g>
+</g>
+<g transform="matrix(1.25, 0, 0, 1.25, 201.949, 375.78)">
+<g id="g3256">
+<path stroke="#000000" fill="none" stroke-linejoin="round" stroke-linecap="round" d="M6.918,46.575l12.634,0l0,-4.979l0.098,0c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.123,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.909,2.032,-2.031c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032l-0.098,0l0,-3.521L6.918,17.758" stroke-width="0.4" id="path3892"/>
+</g>
+</g>
+<!-- coil graphic -->
+<g transform="matrix(1, 0, 0, 1, 225.305, 385.952)">
+<text font-size="5.5" font-family="'Droid Sans'" id="label">relay</text>
+</g>
+</g>
+</g>
+<g transform="translate(0,0)">
+<g stroke="#787878" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="0.7">
+<line y1="65.3" y2="65.3" x1="54" x2="62.7"/>
+<line y1="58.1" y2="58.1" x1="54" x2="62.7"/>
+<line y1="22.1" y2="22.1" x1="54" x2="62.7"/>
+<line y1="14.9" y2="14.9" x1="54" x2="62.7"/>
+<!-- <line x1="0.4" y1="65.3" x2="8.8" y2="65.3"/> -->
+<line y1="65.3" y2="65.3" x1="0" x2="8.7" id="connector6"/>
+<line y1="58.1" y2="58.1" x1="0" x2="8.7"/>
+<line y1="22.1" y2="22.1" x1="0" x2="8.7"/>
+<line y1="14.9" y2="14.9" x1="0" x2="8.7"/>
+</g>
+</g>
+<!-- <line x1="0" y1="64.787" x2="6.666" y2="65.78" fill="none" stroke="#f00000" stroke-width="0.1"/> -->
+<!-- <line x1="0" y1="64.787" x2="0.232" y2="65.78" fill="none" stroke="#00f000" stroke-width="0.1"/> -->
+<!-- <rect id="connector6" x="0" y="64.787" fill="none" width="6.666" height="0.993"/> -->
+<g width="0.232" fill="none" height="1" x="0" y="64.8" id="connector6terminal"/>
+<rect width="6.854" fill="none" height="0.994" x="55.813" y="64.8" id="connector7"/>
+<g width="0.084" fill="none" height="0.994" x="62.583" y="64.8" id="connector7terminal"/>
+<rect width="7.752" fill="none" height="0.806" x="54.874" y="57.684" id="connector8"/>
+<g width="0.303" fill="none" height="0.806" x="62.324" y="57.684" id="connector8terminal"/>
+<rect width="6.289" fill="none" height="0.994" x="56.378" y="21.589" id="connector12"/>
+<g width="0.193" fill="none" height="0.994" x="62.474" y="21.589" id="connector12terminal"/>
+<rect width="6.666" fill="none" height="0.994" x="56.001" y="14.388" id="connector13"/>
+<g width="0.232" fill="none" height="0.994" x="62.435" y="14.388" id="connector13terminal"/>
+<rect width="6.371" fill="none" height="0.888" x="0" y="14.438" id="connector0"/>
+<g width="0.276" fill="none" height="0.888" x="0" y="14.438" id="connector0terminal"/>
+<rect width="5.721" fill="none" height="0.994" x="0" y="21.585" id="connector1"/>
+<g width="0.303" fill="none" height="0.994" x="0" y="21.585" id="connector1terminal"/>
+<rect width="5.91" fill="none" height="0.994" x="0" y="57.492" id="connector5"/>
+<g width="0.153" fill="none" height="0.994" x="0" y="57.492" id="connector5terminal"/>
+</g>
+</g></g><g partID='854502920' id='partLabel'><g transform='translate(62.667,0)' ><g font-size='5' font-style='normal' font-weight='normal' fill='#000000' font-family="'DroidSans'" id='schematicLabel' fill-opacity='1' stroke='none' ><text x='0' y='3.75'>DIP-Relay1</text><text x='0' y='8.75'>D31A*</text></g></g></g></svg>
