@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='1.47814in' height='1.12258in' viewBox='0 0 106.426 80.826' >
+<g partID='854502920'><g transform='translate(76.585,18.159)' ><g transform='matrix(0,1,-1,0,0,0)'  ><g id="schematic">
+<g transform="matrix(1, 0, 0, 1, -201.998, -375.873)">
+<g id="layer1">
+<rect fill="#FFFFFF" width="45.265" id="rect5" stroke-linecap="round" stroke-linejoin="round" x="210.715" stroke="#000000" y="376.359" stroke-width="0.9" height="76.1"/>
+<g fill="#787878" font-family="'Droid Sans'" id="label0" enable-background="new    " font-size="2">
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 439.167)">
+<text>7</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 431.967)">
+<text>6-</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 395.966)">
+<text>2+</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 205.421, 388.765)">
+<text>1</text>
+</g>
+</g>
+</g>
+<g fill="#787878" font-family="'Droid Sans'" id="label0_1_" enable-background="new    " font-size="2">
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 439.167)">
+<text>8</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 431.967)">
+<text>9</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 395.966)">
+<text>13</text>
+</g>
+</g>
+<g>
+<g transform="matrix(1, 0, 0, 1, 259.473, 388.765)">
+<text>14</text>
+</g>
+</g>
+</g>
+<g transform="matrix(1.25, 0, 0, 1.25, 201.949, 375.78)">
+<g id="g3256">
+<path fill="none" id="path3892" stroke-linecap="round" d="M6.918,46.575l12.634,0l0,-4.979l0.098,0c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.123,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.031,-2.032,-2.031c1.122,0,2.032,-0.909,2.032,-2.031c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032c1.122,0,2.032,-0.91,2.032,-2.032c0,-1.122,-0.91,-2.032,-2.032,-2.032l-0.098,0l0,-3.521L6.918,17.758" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3896" stroke-linecap="square" d="M13.004,17.773c0,0.095,-0.077,0.173,-0.173,0.173c-0.096,0,-0.173,-0.077,-0.173,-0.173l0,0c0,-0.096,0.077,-0.173,0.173,-0.173C12.927,17.6,13.004,17.677,13.004,17.773L13.004,17.773z" stroke-linejoin="round" stroke="#000000" stroke-width="0.5783" stroke-miterlimit="1"/>
+<path fill="none" id="path3896-2" stroke-linecap="square" d="M13.062,46.557c0,0.095,-0.077,0.173,-0.173,0.173c-0.095,0,-0.173,-0.077,-0.173,-0.173l0,0c0,-0.095,0.077,-0.173,0.173,-0.173C12.984,46.384,13.062,46.462,13.062,46.557L13.062,46.557z" stroke-linejoin="round" stroke="#000000" stroke-width="0.5783" stroke-miterlimit="1"/>
+<path fill="none" id="rect3916" stroke-linecap="square" d="M12.843,29.681l1.752,3.596l-3.504,0C11.091,33.277,12.836,29.681,12.843,29.681z" stroke-linejoin="round" stroke="#000000" stroke-width="0.4" stroke-miterlimit="1"/>
+<path fill="none" id="path3921" d="M12.831,29.861L12.831,17.765" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3928" d="M10.842,29.405l3.913,0" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+</g>
+</g>
+<path fill="none" id="path3934" d="M231.605,402.046l0,25.938" stroke-linejoin="round" stroke="#000000" stroke-dasharray="3.4697,0.5783" stroke-width="0.4"/>
+<path fill="none" id="path3936" d="M255.986,434.005l-24.38,0l0,-6.081" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<g transform="matrix(1.25, 0, 0, 1.25, 201.949, 375.78)">
+<g id="g3270">
+<path fill="none" id="path3064" d="M7.345,52.375l35.539,0" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3066" d="M7.345,12l35.539,0" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3948" d="M34.546,36.028l0,16.598" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3952" d="M34.527,12.092l0,17.581l2.755,6.778" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<path fill="none" id="path3896-2-1" stroke-linecap="square" d="M34.703,52.335c0,0.095,-0.077,0.173,-0.173,0.173c-0.095,0,-0.173,-0.077,-0.173,-0.173l0,0c0,-0.095,0.077,-0.173,0.173,-0.173C34.625,52.162,34.703,52.239,34.703,52.335L34.703,52.335z" stroke-linejoin="round" stroke="#000000" stroke-width="0.5783" stroke-miterlimit="1"/>
+<path fill="none" id="path3896-2-6" stroke-linecap="square" d="M34.686,12.036c0,0.096,-0.077,0.173,-0.173,0.173c-0.095,0,-0.173,-0.077,-0.173,-0.173l0,0c0,-0.095,0.077,-0.173,0.173,-0.173C34.609,11.863,34.686,11.94,34.686,12.036L34.686,12.036z" stroke-linejoin="round" stroke="#000000" stroke-width="0.5783" stroke-miterlimit="1"/>
+</g>
+</g>
+<path fill="none" id="path3919" d="M218.062,417.334l0,16.529" stroke-linejoin="round" stroke="#000000" stroke-width="0.4"/>
+<g transform="matrix(1, 0, 0, 1, 225.305, 385.952)">
+<text font-family="'Droid Sans'" id="label" font-size="5.5">D31A*</text>
+</g>
+<g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="441.16" y2="441.16" x1="255.98" stroke-width="0.7" x2="264.666"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="433.96" y2="433.96" x1="255.98" stroke-width="0.7" x2="264.666"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="397.959" y2="397.959" x1="255.98" stroke-width="0.7" x2="264.666"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="390.759" y2="390.759" x1="255.98" stroke-width="0.7" x2="264.666"/>
+</g>
+</g>
+<g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="441.156" y2="441.156" x1="201.998" stroke-width="0.7" x2="210.684"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="433.956" y2="433.956" x1="201.998" stroke-width="0.7" x2="210.684"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="397.955" y2="397.955" x1="201.998" stroke-width="0.7" x2="210.684"/>
+</g>
+<g>
+<line fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#787878" y1="390.755" y2="390.755" x1="201.998" stroke-width="0.7" x2="210.684"/>
+</g>
+</g>
+</g>
+</g>
+<rect fill="none" width="6.666" id="connector6" x="0" y="64.787" height="0.993"/>
+<g fill="none" width="0.232" id="connector6terminal" x="0" y="64.787" height="0.993"/>
+<rect fill="none" width="6.854" id="connector7" x="55.813" y="64.79" height="0.994"/>
+<g fill="none" width="0.084" id="connector7terminal" x="62.583" y="64.79" height="0.994"/>
+<rect fill="none" width="7.752" id="connector8" x="54.874" y="57.684" height="0.806"/>
+<g fill="none" width="0.303" id="connector8terminal" x="62.324" y="57.684" height="0.806"/>
+<rect fill="none" width="6.289" id="connector12" x="56.378" y="21.589" height="0.994"/>
+<g fill="none" width="0.193" id="connector12terminal" x="62.474" y="21.589" height="0.994"/>
+<rect fill="none" width="6.666" id="connector13" x="56.001" y="14.388" height="0.994"/>
+<g fill="none" width="0.232" id="connector13terminal" x="62.435" y="14.388" height="0.994"/>
+<rect fill="none" width="6.371" id="connector0" x="0" y="14.438" height="0.888"/>
+<g fill="none" width="0.276" id="connector0terminal" x="0" y="14.438" height="0.888"/>
+<rect fill="none" width="5.721" id="connector1" x="0" y="21.585" height="0.994"/>
+<g fill="none" width="0.303" id="connector1terminal" x="0" y="21.585" height="0.994"/>
+<rect fill="none" width="5.91" id="connector5" x="0" y="57.492" height="0.994"/>
+<g fill="none" width="0.153" id="connector5terminal" x="0" y="57.492" height="0.994"/>
+</g>
+</g></g></g><g partID='854502920' id='partLabel'><g transform='translate(69.626,0)' ><g font-size='5' font-style='normal' font-weight='normal' fill='#000000' font-family="'DroidSans'" id='schematicLabel' fill-opacity='1' stroke='none' ><text x='0' y='3.75'>DIP-Relay1</text><text x='0' y='8.75'>D31A*</text></g></g></g></svg>

@@ -31,5 +31,30 @@
 <h3>test01</h3>
 <p>Open schematic svg with atom, and resave, removing trailing spaces. Verify the actual terminal connection points.  Looks good</p>
 
+<h3>test02</h3>
+<p>Open schematic svg with inkscape, and save as Plain SVG.  Inkscape generated file is considerable larger.  12453 versus 8532 bytes</p>
+<ul>
+  <li>~/development/repos/xmldiffs/xmldiffs.py /usr/share/fritzing/parts/svg/core/schematic/DIP_Relay_D31A_schematic.svg ./svg.schematic.DIP_Relay_D31A_schematic.svg<ul>
+      <li>Considerable differences though enough common to maintain synchroization.<ul>
+          <li>added defs element</li>
+          <li>added metadata element</li>
+          <li>added id attributes</li>
+          <li>moved (reordered) elements</li>
+          <li></li>
+          <li></li>
+        </ul></li>
+      <li>Schematic symbol rotated 90 degrees clockwise from base, but not the part label text.  The raw schematic svg looks the same (matching base export orientation)</li>
+      <li>all of the expected content seems to be there</li>
+    </ul></li>
+</ul>
+
+<h3>test03</h3>
+<p>revert to previous schematic svg file, and start simplifying (using text editor)</p>
+<ul>
+  <li>move pin label text attributes from text elements to containing group<ul>
+      <li>svg view export rotated 90 degrees clockwise from base, same as inkscape version</li>
+      <li>test03a_schem.svg Content looks good</li>
+    </ul></li>
+</ul>
 	</body>
 </html>
