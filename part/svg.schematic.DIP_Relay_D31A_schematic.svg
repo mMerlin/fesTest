@@ -57,13 +57,13 @@
 	</g>
 	<!-- <g stroke="#f00000" stroke-width="0.1" > -->
 	<rect id="connector0terminal" x="-0.5" y="14.4" fill="none" width="1" height="1"/>
-	<rect id="connector1terminal" x="0" y="21.6" fill="none" width="0.2" height="1"/>
-	<rect id="connector5terminal" x="0" y="57.6" fill="none" width="0.2" height="1"/>
-	<rect id="connector6terminal" x="0" y="64.8" fill="none" width="0.2" height="1"/>
-	<rect id="connector7terminal" x="62.5" y="64.8" fill="none" width="0.2" height="1"/>
-	<rect id="connector8terminal" x="62.5" y="57.6" fill="none" width="0.2" height="1"/>
-	<rect id="connector12terminal" x="62.5" y="21.6" fill="none" width="0.2" height="1"/>
-	<rect id="connector13terminal" x="62.5" y="14.4" fill="none" width="0.2" height="1"/>
+	<rect id="connector1terminal" x="-0.5" y="21.6" fill="none" width="1" height="1"/>
+	<rect id="connector5terminal" x="-0.5" y="57.6" fill="none" width="1" height="1"/>
+	<rect id="connector6terminal" x="-0.5" y="64.8" fill="none" width="1" height="1"/>
+	<rect id="connector7terminal" x="62.2" y="64.8" fill="none" width="1" height="1"/>
+	<rect id="connector8terminal" x="62.2" y="57.6" fill="none" width="1" height="1"/>
+	<rect id="connector12terminal" x="62.2" y="21.6" fill="none" width="1" height="1"/>
+	<rect id="connector13terminal" x="62.2" y="14.4" fill="none" width="1" height="1"/>
 	<!-- </g> -->
 </g>
 </svg>
