@@ -56,7 +56,30 @@
   <li>merge pin label text groups. test03b_schem.svg export looks good. Back to same orientation as base.</li>
   <li>remove enable-background attributes: pin label text group and svg element. test03c_schem.svg export looks good. Back to same orientation as base.</li>
   <li>remove all but coil from internal graphics and set internal text to relay. test03d_schem.svg export looks good.</li>
-  <li>move pin line attributes from line elements to containing group.  merge pin line groups.  test03e_schem.svg export looks good.  The eh, ev, er tests have all the content, but the text elements are incorrectly rotated.</li>
+  <li>move pin line attributes from line elements to containing group. merge pin line groups. test03e_schem.svg export looks good. The eh, ev, er tests have all the content, but the text elements are incorrectly rotated.</li>
 </ul>
+
+<h3>test04</h3>
+<p>Here is what is left in the schematic svg file</p>
+<ul>
+  <li>Top level group with id schematic containing<ul>
+			<li>group with id layer1 containing<ul>
+					<li>1 rect element for the schematic body background</li>
+					<li>1 group containing 7 text elements for the connection pin labels</li>
+					<li>1 group containing a single path for the simplified internal schematic graphics
+					<li>1 text element with the interior schematic label</li>
+				</ul></li>
+			<li>16 rect elements with id connector«n» and connector«n» for «n» in (0, 1, 5, 6, 7, 8, 12, 13)</li>
+		</ul></li>
+</ul>
+<p>move the connector… rect elements inside of the layer1 group. The interior body of the schematic symbol only highlights on hover in about a 0.15 inch band. No obvious matching graphics. The outer symbol (background and pins) highlights correctly.</p>
+<p>The schematic pins can not be selected, to make connections.</p>
+
+<h3>test05</h3>
+<p>move the connector… elements back outside of the layer1 group. Move the unnamed group of connector lines outside of the layer1 group (just before the rect elements). The line elements do not show up in a simple viewer, even before combining into a part. Redo, duplicating the transform from the layer1 group. test05_schem.svg content looks good, though back to be rotated 90 degrees again.</p>
+
+<h3>test06</h3>
+<p>reduce the transform offset to (0,0) adjusting the line x and y attributes to match. Tweak numbers for consistency, and round to nicer multiples. 7.2 px per 0.1 inch step between pins. Currently each pin line is 8.7 px, or .12 inches long. test06_schem.svg content looks good, though again rotated 90 degrees.</p>
+
 	</body>
 </html>
