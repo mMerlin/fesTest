@@ -4,12 +4,12 @@
 <svg version="1.1"
 	 id="Ebene_1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="62.667px"
-	 height="76.585px" viewBox="0 0 62.667 76.585" enable-background="new 0 0 62.667 76.585" xml:space="preserve">
+	 height="76.585px" viewBox="0 0 62.667 76.585" xml:space="preserve">
 <g id="schematic">
 	<g id="layer1" transform="translate(-201.99844,-375.87344)">
 
-			<rect id="rect5" x="210.715" y="376.359" fill="#FFFFFF" stroke="#000000" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" width="45.265" height="76.1"/>
-		<g id="label0" enable-background="new    " fill="#787878" font-family="'Droid Sans'" font-size="2">
+		<rect id="rect5" x="210.715" y="376.359" fill="#FFFFFF" stroke="#000000" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round" width="45.265" height="76.1"/><!-- part body border and background -->
+		<g id="label0" fill="#787878" font-family="'Droid Sans'" font-size="2">
 			<g>
 				<text transform="matrix(1 0 0 1 205.4213 439.1669)">7</text>
 			</g>
@@ -22,8 +22,6 @@
 			<g>
 				<text transform="matrix(1 0 0 1 205.4213 388.7655)">1</text>
 			</g>
-		</g>
-		<g id="label0_1_" enable-background="new    " fill="#787878" font-family="'Droid Sans'" font-size="2">
 			<g>
 				<text transform="matrix(1 0 0 1 259.4726 439.1669)">8</text>
 			</g>
