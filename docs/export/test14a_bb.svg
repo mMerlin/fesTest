@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.7in' height='0.574459in' viewBox='0 0 50.4 41.3611' >
+<g partID='854502850'><g transform='translate(0,17.6011)' ><g  id="breadboard">
+ <g transform="matrix(1, 0, 0, 1, 0, -818.13)">
+  <g  id="layer1">
+   <rect  height="18.0473" fill-opacity="1" style="stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:10.24724745, 1.70787459;stroke-dashoffset:0" fill="#333333" width="49.0384" stroke-opacity="1" id="rect10960" x="0.698985" stroke="#333333" y="820.989" stroke-width="1.3663"/>
+   <rect  height="1.771" fill="#3d3d3d" width="50.4" id="top" x="0.00330585" y="820.307"/>
+   <rect  height="1.771" width="50.4" id="bottom" x="0.00330585" y="837.976"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#141414" id="right" points="39.888,3.1448,39.888,15.8632,40.32,17.2808,40.32,1.728"/>
+   </g>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#1f1f1f" id="left" points="0.432,3.1448,0.432,15.8632,0,17.2808,0,1.728"/>
+   </g>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#1c1c1c" id="left-upper-rect" points="0.3224,7.8216,0.3224,9.504,2.88,9.504,2.88,6.624,0.432,6.6008"/>
+   </g>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#383838" id="left-lower-rect" points="2.88,9.504,0.3224,9.504,0.3224,11.1848,0.432,12.4136,2.88,12.4136"/>
+   </g>
+   <path  fill="#262626" d="m0.406306,827.92l0,4.19896c1.059,-0.12296,1.887,-1.00896,1.887,-2.104,0,-1.09496,-0.821,-1.972,-1.887,-2.09496z" id="slot"/>
+   <path  fill="#303030" d="m0.543306,822.08l0,4.31304c1.714,0.324,3.018,1.82096,3.018,3.62896,0,1.808,-1.298,3.31208,-3.018,3.63608l0,0.008L4.1433,830.032l0,-11.5861L0.543306,818.448z" id="cover"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <circle  cx="3.744" cy="13.5184" r="1.1864" fill="#212121" id="circle13"/>
+   </g>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <g  enable-background="new    " fill="#cccccc" id="g3170">
+     <g  fill-opacity="1" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:OCRA;-inkscape-font-specification:OCRA Bold" fill="#cccccc" id="text3309" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" font-size="0" stroke="none">
+      <text  fill="#cccccc" id="tspan3311" x="5.46419" y="10.7254">D31A*</text>
+     </g>
+    </g>
+   </g>
+   <rect  height="3.124" fill="#8c8c8c" width="2.16" id="rect4667" x="2.52331" y="838.783"/>
+   <rect  height="2.159" fill="#999999" width="2.16" x="2.51695" y="839.725"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon18" points="3.744,17.66,4.896,17.1304,4.896,16.5088,2.016,16.5088,2.016,17.66"/>
+   </g>
+   <rect  height="3.125" fill="#8c8c8c" width="2.16" id="rect4671" x="2.52331" y="818.147"/>
+   <rect  height="2.16" fill="#999999" width="2.16" x="2.51704" y="818.138"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon22" points="3.744,1.348,2.016,1.348,2.016,2.5,4.896,2.5,4.896,1.8776"/>
+   </g>
+   <rect  height="3.124" fill="#8c8c8c" width="2.158" id="rect4675" x="45.7233" y="838.783"/>
+   <rect  height="2.159" fill="#999999" width="2.158" x="45.7252" y="839.732"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon26" points="36.576,17.66,38.304,17.66,38.304,16.5088,35.424,16.5088,35.424,17.1304"/>
+   </g>
+   <rect  height="3.125" fill="#8c8c8c" width="2.158" id="rect4679" x="45.7233" y="818.147"/>
+   <rect  height="2.16" fill="#999999" width="2.158" x="45.7252" y="818.131"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon30" points="36.576,1.348,35.424,1.8776,35.424,2.5,38.304,2.5,38.304,1.348"/>
+   </g>
+   <rect  height="3.124" fill="#8c8c8c" width="2.158" id="rect4683" x="9.72331" y="838.783"/>
+   <rect  height="2.159" fill="#999999" width="2.158" x="9.72535" y="839.732"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon34" points="10.656,16.5088,6.624,16.5088,6.624,17.1304,7.776,17.66,9.504,17.66,10.656,17.1304"/>
+   </g>
+   <rect  height="3.125" fill="#8c8c8c" width="2.158" id="rect4687" x="9.72331" y="818.147"/>
+   <rect  height="2.16" fill="#999999" width="2.158" x="9.72837" y="818.138"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon38" points="6.624,2.5,10.656,2.5,10.656,1.8776,9.504,1.348,7.776,1.348,6.624,1.8776"/>
+   </g>
+   <rect  height="3.124" fill="#8c8c8c" width="2.16" id="rect4691" x="38.5233" y="838.783"/>
+   <rect  height="2.159" fill="#999999" width="2.16" x="38.5234" y="839.732"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon66" points="33.696,16.5088,29.664,16.5088,29.664,17.1304,30.816,17.66,32.544,17.66,33.696,17.1304"/>
+   </g>
+   <rect  height="3.125" fill="#8c8c8c" width="2.16" id="rect4695" x="38.5233" y="818.147"/>
+   <rect  height="2.16" fill="#999999" width="2.16" x="38.5234" y="818.131"/>
+   <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+    <polygon  fill="#8c8c8c" id="polygon70" points="29.664,2.5,33.696,2.5,33.696,1.8776,32.544,1.348,30.816,1.348,29.664,1.8776"/>
+   </g>
+  </g>
+ </g>
+ <!-- <g fill="none"> -->
+ <!-- <g fill="#0000f0" opacity="0.5">   <rect width="3.157480314960623" x="57.12992125984253" y="25.92874065748033" height="3.818897637795281"/>   <rect width="2.83464566929132" x="56.98031496062994" y="-0.346849893700778" height="4.322834645669282"/>   <rect width="2.834645669291291" x="48.05118110236226" y="0.1492130984252071" height="3.826771653543297"/>   <rect width="2.496062992126018" x="12.15354330708661" y="0.3145674291338594" height="3.992125984251949"/>   <rect width="2.992125984252003" x="3.05905511811022" y="-0.01614123228344511" height="3.992125984251949"/>   <rect width="2.314960629921274" x="3.240157480314964" y="25.94448868897641" height="4.299212598425186"/>   <rect width="2.66141732283467" x="12.15354330708661" y="26.09409498818895" height="3.818897637795338"/>   <rect width="2.661417322834638" x="48.03543307086618" y="26.09409498818895" height="3.488188976377977"/>   </g> -->
+ <g  fill="none">
+  <!-- <g fill="#00f000" opacity="0.5"> -->
+  <rect  height="2.99811" width="2.42205" id="connector5" x="38.4" y="20.8"/>
+  <rect  height="4.06268" width="2.36535" id="connector6" x="45.6" y="20"/>
+  <rect  height="3.42646" width="2.23937" id="connector7" x="45.726" y="-0.132283"/>
+  <rect  height="3.29417" width="2.15748" id="connector8" x="38.4" y="0"/>
+  <rect  height="3.29417" width="2.38425" id="connector12" x="9.6" y="0"/>
+  <rect  height="3.79811" width="2.44094" id="connector0" x="2.4" y="20"/>
+  <rect  height="3.29417" width="2.57323" id="connector13" x="2.4" y="0.132283"/>
+  <rect  height="3.13039" width="2.64882" id="connector1" x="9.6" y="20.8"/>
+ </g>
+</g>
+</g></g><path stroke='#8c8c8c' stroke-width='2.0952' stroke-linecap='round' stroke-linejoin='round' fill='none' d='M15.4303,3.6324L14.3827,3.6324' />
+<path stroke='#8c8c8c' stroke-width='2.0952' stroke-linecap='round' stroke-linejoin='round' fill='none' d='M42.1401,3.6324L43.1877,3.6324' />
+<g partID='854502880'><g transform='translate(13.3351,0)' ><g xmlns="http://www.w3.org/2000/svg" id="breadboard">
+ <rect xmlns="http://www.w3.org/2000/svg" height="0.72" fill="none" width="0.72" id="connector0pin" x="0.36" y="2.5848"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="0.72" fill="none" width="0.72" id="connector1pin" x="29.8202" y="2.5848"/>
+ <line xmlns="http://www.w3.org/2000/svg" y2="3.6324" x1="1.0476" x2="2.0952" fill="none" stroke-linecap="round" id="connector0leg" stroke="#8C8C8C" stroke-width="2.0952" y1="3.6324"/>
+ <line xmlns="http://www.w3.org/2000/svg" y2="3.6324" x1="29.8526" x2="28.805" fill="none" stroke-linecap="round" id="connector1leg" stroke="#8C8C8C" stroke-width="2.0952" y1="3.6324"/>
+ <path xmlns="http://www.w3.org/2000/svg" fill="none" d="M1.0476,3.6324l28.3666,0" stroke="#8C8C8C" stroke-width="2.0952"/>
+ <path xmlns="http://www.w3.org/2000/svg" fill="#D9B477" d="M10.2478,0.49536c-0.36,-0.1656,-0.9792,-0.2952,-1.3752,-0.2952l-1.9872,0c-0.396,0,-0.72,0.324,-0.72,0.72l0,5.35608c0,0.39672,0.324,0.72,0.72,0.72l1.9872,0c0.396,0,1.0152,-0.13608,1.3752,-0.2952l0.072,-0.03528c0.36,-0.1656,0.9792,-0.2952,1.3752,-0.2952l7.1856,0c0.39672,0,1.01448,0.13608,1.37448,0.2952l0.07272,0.03528c0.36,0.1656,0.97776,0.2952,1.3752,0.2952l1.9872,0c0.39744,0,0.72,-0.32328,0.72,-0.72L24.4102,0.92016c0,-0.396,-0.32256,-0.72,-0.72,-0.72l-1.9872,0c-0.39744,0,-1.0152,0.1368,-1.3752,0.2952l-0.07272,0.036c-0.36,0.1656,-0.97776,0.2952,-1.37448,0.2952l-7.1856,0c-0.396,0,-1.0152,-0.1368,-1.3752,-0.2952L10.2478,0.49536z" id="body"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="6.79536" fill="#ad9f4e" width="0.70272" id="gold_band" x="22.019" y="0.19368"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="5.5368" fill="#8a3d06" width="1.8504" id="band_rd_multiplier" x="16.1726" y="0.82656"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="5.5368" fill="#c40808" width="1.8504" id="band_2_nd" x="12.4726" y="0.82656"/>
+ <path xmlns="http://www.w3.org/2000/svg" fill="#c40808" d="M10.6286,0.63936c-0.1152,-0.036,-0.2232,-0.072,-0.3096,-0.1152l-0.072,-0.036c-0.36,-0.16488,-0.9792,-0.2952,-1.3752,-0.2952l-0.0864,0l0,6.79608l0.0864,0c0.396,0,1.0152,-0.13608,1.3752,-0.2952l0.072,-0.03528c0.0864,-0.04464,0.1944,-0.07992,0.3096,-0.1152L10.6286,0.63936z" id="band_1_st"/>
+ <path xmlns="http://www.w3.org/2000/svg" opacity="0.3" d="M23.711,4.0896L23.711,4.0896c0,0.37944,-0.13032,0.69912,-0.2952,0.69912l-1.9224,0c-0.38016,0,-0.97776,-0.05616,-1.33272,-0.1224L20.088,4.65048c-0.34488,-0.0648,-0.94896,-0.1224,-1.33344,-0.1224L11.808,4.52808c-0.3816,0,-0.9792,0.0576,-1.332,0.1224l-0.072,0.01512c-0.3456,0.06552,-0.9432,0.1224,-1.332,0.1224l-0.3168,0l-1.0008,0l-0.3096,0c-0.3816,0,-0.6984,0.29376,-0.6984,0.64512l0,0.24696L6.7464,5.8392l0,0.1728c0,0.36,0.3168,0.64512,0.6984,0.64512l1.62,0c0.3816,0,0.9792,-0.1224,1.332,-0.26712l0.072,-0.02808c0.3456,-0.14112,0.9504,-0.26496,1.332,-0.26496l6.94656,0c0.37944,0,0.97704,0.12384,1.33416,0.26568l0.07416,0.02808c0.34488,0.14472,0.94464,0.26712,1.33344,0.26712l2.2248,0c0.38088,0,0.69912,-0.2952,0.69912,-0.64512L24.413,5.472L24.413,4.49928L24.413,2.65536C24.1358,2.76336,23.711,3.06576,23.711,4.0896z" id="Shadow"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="3.15288" opacity="0.4" width="0.70272" id="ShadowExtra" x="22.019" y="3.48336"/>
+ <path xmlns="http://www.w3.org/2000/svg" opacity="0.25" fill="#FFFFFF" d="M19.751,1.08576c0.22968,0,0.49104,-0.1008,0.6624,-0.1728c0.2016,-0.0792,0.57672,-0.144,0.96624,-0.144l1.46088,0c0.22464,0,0.22464,0.2448,0.22464,0.3744c0,0.1296,-0.01512,0.3816,-0.22464,0.3816l-3.06,0c-0.10728,0,-0.2304,-0.1152,-0.2304,-0.22392C19.5566,1.21536,19.6286,1.08576,19.751,1.08576z" id="ReflexRight"/>
+ <circle xmlns="http://www.w3.org/2000/svg" cx="6.99984" cy="1.13616" opacity="0.35" r="0.432" fill="#FFFFFF" id="ReflexLeft"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="1.62" opacity="0.5" fill="#FFFF33" width="0.70272" id="Reflex_gold" x="22.019" y="0.42336"/>
+ <rect xmlns="http://www.w3.org/2000/svg" height="0.7488" opacity="0.5" fill="#FFFFFF" width="0.70272" id="Reflex_extra" x="22.019" y="0.78336"/>
+</g>
+</g></g><g partID='854503490'><line stroke-linecap='round' stroke='#157de6' x1='3.68661' y1='19.3804' x2='14.3827' y2='3.6324' stroke-width='0.8' /></g><g partID='854503510'><line stroke-linecap='round' stroke='#fa50e6' x1='43.1877' y1='3.6324' x2='10.7921' y2='19.2481' stroke-width='0.8' /></g></svg>

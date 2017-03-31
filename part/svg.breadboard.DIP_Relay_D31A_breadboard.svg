@@ -1,28 +1,7 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg width="63" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1" xmlns="http://www.w3.org/2000/svg" height="29.700001" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" id="svg10944" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<?xml version='1.0' encoding='UTF-8'?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="63" height="29.700001">
  <g id="breadboard">
-  <defs id="defs10946"/>
-  <sodipodi:namedview showgrid="true" pagecolor="#ffffff" bordercolor="#666666" id="base" borderopacity="1.0" showguides="true">
-   <sodipodi:guide position="28.883929,2.7008929" id="guide10952" orientation="0,1"/>
-   <sodipodi:guide position="0.78523577,27.001851" id="guide10954" orientation="0,1"/>
-   <sodipodi:guide position="0,28.18957" id="guide10956" orientation="1,0"/>
-   <sodipodi:guide position="62.992482,24.811872" id="guide10958" orientation="1,0"/>
-   <inkscape:grid empspacing="5" snapvisiblegridlinesonly="true" enabled="true" visible="true" type="xygrid" id="grid10962"/>
-   <sodipodi:guide position="59.851539,31.291054" id="guide11044" orientation="1,0"/>
-   <sodipodi:guide position="50.854867,28.489459" id="guide11046" orientation="1,0"/>
-   <sodipodi:guide position="14.852399,29.491719" id="guide11048" orientation="1,0"/>
-   <sodipodi:guide position="5.8478362,28.331622" id="guide11050" orientation="1,0"/>
-  </sodipodi:namedview>
-  <metadata id="metadata10949">
-   <rdf:RDF>
-    <cc:Work rdf:about="">
-     <dc:format>image/svg+xml</dc:format>
-     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-     <dc:title/>
-    </cc:Work>
-   </rdf:RDF>
-  </metadata>
   <g id="layer1" transform="translate(0,-1022.6622)">
    <rect width="61.298" x="0.8737309" y="1026.2367" height="22.559168" style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:1.70787466;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.24724745, 1.70787459;stroke-dashoffset:0" id="rect10960"/>
    <rect width="63" x="0.0041323118" y="1025.3835" height="2.2137501" style="fill:#3d3d3d" id="top"/>
@@ -36,7 +15,7 @@
    <circle cx="4.6799998" cy="16.898001" style="fill:#212121" id="circle13" r="1.483" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
    <g style="fill:#cccccc" enable-background="new    " id="g3170" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)">
     <g style="font-size:4.80000019px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:OCRA;-inkscape-font-specification:OCRA Bold" id="text3309" xml:space="preserve">
-     <text x="6.8302426" y="13.406791" style="fill:#cccccc" id="tspan3311">D31A*</text>
+     <text x="6.8302426" y="13.406791" style="fill:#cccccc" id="tspan3311">TEMPLATE</text>
     </g>
    </g>
    <rect width="2.7" x="3.1541328" y="1048.4785" height="3.9050002" style="fill:#8c8c8c" id="rect4667"/>
@@ -64,21 +43,21 @@
    <rect width="2.7" x="48.15419" y="1022.6642" height="2.7" style="fill:#999999"/>
    <polygon points="37.08,3.125 42.12,3.125 42.12,2.347 40.68,1.685 38.52,1.685 37.08,2.347 " style="fill:#8c8c8c" id="polygon70" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
   </g>
-  <rect width="3,157480314960623" x="57,12992125984253" y="25,92874065748033" fill="none" height="3,818897637795281"/>
-  <rect width="2,83464566929132" x="56,98031496062994" y="-0,346849893700778" fill="none" height="4,322834645669282"/>
-  <rect width="2,834645669291291" x="48,05118110236226" y="0,1492130984252071" fill="none" height="3,826771653543297"/>
-  <rect width="2,496062992126018" x="12,15354330708661" y="0,3145674291338594" fill="none" height="3,992125984251949"/>
-  <rect width="2,992125984252003" x="3,05905511811022" y="-0,01614123228344511" fill="none" height="3,992125984251949"/>
-  <rect width="2,314960629921274" x="3,240157480314964" y="25,94448868897641" fill="none" height="4,299212598425186"/>
-  <rect width="2,66141732283467" x="12,15354330708661" y="26,09409498818895" fill="none" height="3,818897637795338"/>
-  <rect width="2,661417322834638" x="48,03543307086618" y="26,09409498818895" fill="none" height="3,488188976377977"/>
-  <rect width="3,027559055118112" x="48" y="26" fill="none" height="3,74763829527555" id="connector5"/>
-  <rect width="2,956692913385787" x="57,00000000000001" y="25" fill="none" height="5,078346956692855" id="connector6"/>
-  <rect width="2,799212598425136" x="57,15748031496066" y="-0,1653543307086522" fill="none" height="4,283071366141684" id="connector7"/>
-  <rect width="2,69685039370075" x="48" y="0" fill="none" height="4,117717035433031" id="connector8"/>
-  <rect width="2,9803149606299" x="12" y="0" fill="none" height="4,117717035433031" id="connector12"/>
-  <rect width="3,051181102362194" x="3" y="25" fill="none" height="4,74763829527555" id="connector0"/>
-  <rect width="3,216535433070847" x="3" y="0,1653543307086522" fill="none" height="4,11771703543306" id="connector13"/>
-  <rect width="3,311023622047233" x="12" y="26" fill="none" height="3,912992625984231" id="connector1"/>
+ </g>
+ <!-- <g fill="#00f000" opacity="0.3" transform="translate(3,-0.5)"> -->
+   <!-- half the height -->
+ <g fill="none" transform="translate(3,-0.5)">
+  <g transform="translate(0,27)">
+   <rect width="3" x="0" y="0" height="4" id="connector0"/>
+   <rect width="3" x="9" y="0" height="4" id="connector1"/>
+   <rect width="3" x="45" y="0" height="4" id="connector5"/>
+   <rect width="3" x="54" y="0" height="4" id="connector6"/>
+  </g>
+  <g transform="translate(0,0)">
+   <rect width="3" x="54" y="0" height="4" id="connector7"/>
+   <rect width="3" x="45" y="0" height="4" id="connector8"/>
+   <rect width="3" x="9" y="0" height="4" id="connector12"/>
+   <rect width="3" x="0" y="0" height="4" id="connector13"/>
+  </g>
  </g>
 </svg>

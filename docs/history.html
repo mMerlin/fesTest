@@ -28,10 +28,11 @@
 
 <h2>Testing paths</h2>
 
-<h3>test01</h3>
-<p>Open schematic svg with atom, and resave, removing trailing spaces. Verify the actual terminal connection points. Looks good</p>
+<h3>Schematic</h3>
+<h4>test01</h4>
+<p>Open schematic svg with atom, and resave, removing trailing spaces. Verify the actual terminal connection points. Looks good. The breadboard view export is not showing the part number on the package body, and a piece of the package body graphic by the notch is extending too high past pin 14.</p>
 
-<h3>test02</h3>
+<h4>test02</h4>
 <p>Open schematic svg with inkscape, and save as Plain SVG. Inkscape generated file is considerable larger. 12453 versus 8532 bytes</p>
 <ul>
   <li>~/development/repos/xmldiffs/xmldiffs.py /usr/share/fritzing/parts/svg/core/schematic/DIP_Relay_D31A_schematic.svg ./svg.schematic.DIP_Relay_D31A_schematic.svg<ul>
@@ -46,7 +47,7 @@
     </ul></li>
 </ul>
 
-<h3>test03</h3>
+<h4>test03</h4>
 <p>revert to previous schematic svg file, and start simplifying (using text editor)</p>
 <ul>
   <li>move pin label text attributes from text elements to containing group<ul>
@@ -59,7 +60,7 @@
   <li>move pin line attributes from line elements to containing group. merge pin line groups. test03e_schem.svg export looks good. The eh, ev, er tests have all the content, but the text elements are incorrectly rotated.</li>
 </ul>
 
-<h3>test04</h3>
+<h4>test04</h4>
 <p>Here is what is left in the schematic svg file</p>
 <ul>
   <li>Top level group with id schematic containing<ul>
@@ -75,28 +76,28 @@
 <p>move the connector… rect elements inside of the layer1 group. The interior body of the schematic symbol only highlights on hover in about a 0.15 inch band. No obvious matching graphics. The outer symbol (background and pins) highlights correctly.</p>
 <p>The schematic pins can not be selected, to make connections.</p>
 
-<h3>test05</h3>
+<h4>test05</h4>
 <p>move the connector… elements back outside of the layer1 group. Move the unnamed group of connector lines outside of the layer1 group (just before the rect elements). The line elements do not show up in a simple viewer, even before combining into a part. Redo, duplicating the transform from the layer1 group. test05_schem.svg content looks good, though back to be rotated 90 degrees again.</p>
 
-<h3>test06</h3>
+<h4>test06</h4>
 <p>reduce the transform offset to (0,0) adjusting the line x and y attributes to match. Tweak numbers for consistency, and round to nicer multiples. 7.2 px per 0.1 inch step between pins. Currently each pin line is 8.7 px, or .12 inches long. test06_schem.svg content looks good, though again rotated 90 degrees.</p>
 
-<h3>test07</h3>
+<h4>test07</h4>
 <p>move the connector pin line elements outside of their (no attributes) container groups, and delete the now empty groups (still in the group with the common attributes). test07a_schem.svg content looks good, though again rotated 90 degrees.</p>
 
-<h3>test08</h3>
+<h4>test08</h4>
 <p>add connector6 id to line element, and remove original connector6 rect element. Connectors work in Fritzing, test08a_schem.svg content looks good, back to base orientation.</p>
 <p>add matching connector«n» ids to the rest of the connector pin lines, and remove the rect elements with connector«n» ids. test08b_schem.svg content looks good, though again rotated 90 degrees.</p>
 <p>cleanup connector«n»terminal rect element position and size. Set the centre of the rectangle to the defined edge of the schematic graphics (it extends outside to main range rectangle). test08c_schem.svg content looks good, though again rotated 90 degrees.</p>
 <p>This is now down to a fairly minimal schematic part graphic. It is only 69 lines, 3782 bytes while the Fritzing schematic template file is 88 lines (some blank), 5971 bytes. This is smaller due to moving common attribute values to containing group element. The template also has a few extra example graphic elements.</p>
 <p>Recalculate and fix the rest of the connector«n»terminal rect element position and size values. test08d_schem.svg content looks good, though again rotated 90 degrees.</p>
 
-<h3>test09</h3>
+<h4>test09</h4>
 <p>Bring some of the updates from the schematic template file into the working svg.</p>
 <p>Set the svg element attributes: version, baseProfile, and id to match the template file: 1.2, tiny, Layer_1. Add full size (as viewBox) background rectangle outside of schematic group. This DOES get carried into Fritzing view, but not exported to svg image. Useful for viewing raw svg schematic file, without the hatched transparent background. Add duplicate rectangle at the top of the schematic group, commented out, to allow easy addition of background when viewing exported svg. test09a_schem.svg content looks good, rotated 90 degrees from base.</p>
 <p>Remove svg element xmlns:… attributes that are not in the template. Add 0.1 inch help reference block that will be included in Fritzing, but not exported to the view svg. Add xmlns:xml namespace attribute to schematic group. Remove layer1 id from group. test09b_schem.svg content looks good, rotated 90 degrees from base.</p>
 
-<h3>test10</h3>
+<h4>test10</h4>
 <p>Remove large translate offset from group and adjust child element coordinates to compensate.
 
 Remove null group wrappers from around pin labels. Adjust the label matrix offset values to integer multiples of 0.1 inch and adjust the containing group offset to compensate.
@@ -109,29 +110,55 @@ Resequence pin related elements into the connector number order within each grou
 
 test10_schem.svg content looks good, rotated 90 degrees from base.</p>
 
-<h3>test11</h3>
+<h4>test11</h4>
 <p>Use nested groups to set different offset for left and right pin information while keeping the actual element coordinates the same. test11a_schem.svg content looks good, rotated 90 degrees from base.</p>
 <p>Remove generic id attributes not used for Fritzing.  Group pin related together to make changes easier.  Currently 3 sets: pin numbers, connectors, and terminals.  Could be pin labels as well.  Increase coil graphics to standard stroke width. test11b_schem.svg content looks good, rotated 90 degrees from base.</p>
 
-<h3>test12</h3>
+<h4>test12</h4>
 <p>Adjust full dimensions to even multiples of 0.1 inch.
 Adjust wrapper offsets so that pin element references start from 0,0.
 test12a_schem.svg content looks good, rotated 90 degrees from base.
 <p>Adjust so the pin elements are NOT at a multiple of 0.1 inch from the top.
 test12b_schem.svg content looks good, rotated 90 degrees from base.</p>
 
-<h3>test13</h3>
-<p>Tweak for better svg verion 1.2 tiny conformance</p>
-
-<h3>Schematic result</h3>
-<p>This is now a pretty good base for a Fritzing part schematic template file. A few other elements could be added, like pin label names in the standard size and colour.  Also a pin group name.
+<h4>test13</h4>
+<p>Tweak for better svg verion 1.2 tiny conformance.
 Remove Adobe Illustrator generator comment.
 Remove doctype.
 Remove id from svg element.
+test13_schem.svg content looks good, rotated 90 degrees from base.
+</p>
+
+<h4>Pending ideas</h4>
+<p>Move connection terminals (back) outside of the schematic group, so that they will not be exported to view svg files.  Even if they are invisible.  Check to see if they do get exported anyway.</p>
+
+<h4>Schematic result</h4>
+<p>This is now a pretty good base for a Fritzing part schematic template file. A few other elements could be added, like pin label names in the standard size and colour.  Also a pin group name.
 </p>
 
 <pre>
-relay, even SPST, could use the split schematic: the coil and each switch could be separated on the schematic.
+relay, even SPST, could use the split schematic: the coil and (each) switch could be separated on the schematic.
 </pre>
+
+<h3>Breadboard</h3>
+<h4>test14</h4>
+<p>cleanup xml and svg tag attributes for svg version 1.1.
+remove defs, sodipodi, and metadata elements.
+remove inkscape generator comment
+wrap blocks of rect elements group elements, extracting the common fill="none" to the container.
+change the «integer»,«fraction» values in the rect elements to «integer».«fraction»
+comment out the block of rect elements that are not displayed, and do not have any id attribute.
+test14a_bb.svg and test14a_schem.svg content looks good.  Schematic was rotated in Fritzing to get to match base.
+</p>
+<p>Move connector group outside of breadboard group.
+(connector rectangles are also used for terminal reference)
+Add group wrappers with offset translations to get connector coordinates on 0.1 inch grid
+use nested groups with offsets to get the coordinates the same for the low and high numbered connector pins.
+Adjust so connector pin rectangle centres are exactly on 0.1 inch grid.
+Change part label to "TEMPLATE".
+test14a_bb.svg content *mostly* looks good, other than the errors that have been there since the base.
+</p>
+
+
 	</body>
 </html>
