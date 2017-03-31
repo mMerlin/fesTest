@@ -148,17 +148,24 @@ remove inkscape generator comment
 wrap blocks of rect elements group elements, extracting the common fill="none" to the container.
 change the «integer»,«fraction» values in the rect elements to «integer».«fraction»
 comment out the block of rect elements that are not displayed, and do not have any id attribute.
-test14a_bb.svg and test14a_schem.svg content looks good.  Schematic was rotated in Fritzing to get to match base.
-</p>
+test14a_bb.svg content *mostly* looks good, other than the errors that have been there since the base. test14a_schem.svg content looks good.  Schematic was rotated in Fritzing to get to match base.</p>
 <p>Move connector group outside of breadboard group.
 (connector rectangles are also used for terminal reference)
 Add group wrappers with offset translations to get connector coordinates on 0.1 inch grid
 use nested groups with offsets to get the coordinates the same for the low and high numbered connector pins.
 Adjust so connector pin rectangle centres are exactly on 0.1 inch grid.
 Change part label to "TEMPLATE".
-test14a_bb.svg content *mostly* looks good, other than the errors that have been there since the base.
+test14b_bb.svg content looks good.
 </p>
+<p>Remove generic/generated ids.
+Add group wrappers around related element sets:
+(chip orientation markings, notch, legs).
+Delete extra precision digits.
+test14c_bb.svg content looks good.
+</p>
+<p>
 
+</p>
 
 	</body>
 </html>
