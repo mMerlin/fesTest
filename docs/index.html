@@ -82,6 +82,13 @@
 <p>To match the standard 0.1 inch snap grid, the complete schematic graphics should start at (0,0), and be multiples of 0.1 in width and height. That will be multiples of 7.2 or 9.0 px. Rectangular schematic symbols that have pin connections around the outside should have a background rectangle that matches the viewBox, but inset by 0.1 inch on each side that any connection pins exist. That inset needs to be adjusted by an addition 0.5 of the background rectangle stroke width (which could be zero). That means adding 0.5 * stroke width to the x and y rect element coordinates, and subtracting 1.0 * stroke width from the width and height.</p>
 <p>To be tested, but it appears that Fritzing aligns (at least) the schematic symbol position (origin) based on the (first?) detected pin location. Not on the viewBox origin. Symptoms make it look like the viewBox origin is not on a grid boundary, but the terminal end of the first pin is.</p>
 <p>Graphics content in the schematic svg file that is NOT inside of the schematic (id) group is visible in the Fritzing view, but does not get exported to the svg image. However, it DOES get exported to png.  Exporting to png even includes the current highlight / selected element dashed border.  Is the whole problem simply graphics that is not inside the appropriate view/layer group?  connector«n»terminal graphics is fine outside of the group, because that is functionality for Fritzing, and does not show on the export anyway.</p>
+<p>Example data values</p>
+<ul>
+	<li>internal pin label names (eg. NC): fill="#787878" font-size="4.5" font-family="'DroidSans'"</li>
+	<li>internal component (chip) text label: font-size="5.5" font-family="'DroidSans'"</li>
+	<li>schematic component body graphics: fill="none" stroke="#000000" stroke-width="0.7" stroke-linecap="round"</li>
+	<li>internal schematic graphics that connect to exernal pins have id in the form connector«n»pin_«number»_</li>
+</ul>
 
 <h4>PCB svg file</h4>
 <p>See <a href="https://github.com/fritzing/fritzing-app/wiki/2.1-Part-file-format#more-svg-topics">More SVG topics</a> for a few PCB specific svg rules and options.
