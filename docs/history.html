@@ -113,8 +113,17 @@ test10_schem.svg content looks good, rotated 90 degrees from base.</p>
 <p>Use nested groups to set different offset for left and right pin information while keeping the actual element coordinates the same. test11a_schem.svg content looks good, rotated 90 degrees from base.</p>
 <p>Remove generic id attributes not used for Fritzing.  Group pin related together to make changes easier.  Currently 3 sets: pin numbers, connectors, and terminals.  Could be pin labels as well.  Increase coil graphics to standard stroke width. test11b_schem.svg content looks good, rotated 90 degrees from base.</p>
 
-<h3>test-future</h3>
-<p>There is still some cleanup needed for the used schematic graphics, to get things to land properly on the 0.1 inch grid. It is near time to try modifying the breadboard svg file, so see if there is an interaction between them. By itself, the schematic svg file is small, simple structure, and working.</p>
+<h3>test12</h3>
+<p>Adjust full dimenstions to even multiples of 0.1 inch.
+Adjust wrapper offsets so that pin element references start from 0,0.
+test12a_schem.svg content looks good, rotated 90 degrees from base.
+<p>Adjust so the pin elements are NOT at a multiple of 0.1 inch from the top.
+test12b_schem.svg content looks good, rotated 90 degrees from base.</p>
+
+<h3>Schematic result</h3>
+<p>This is now a pretty good base for a Fritzing part schematic template file. A few other elements could be added, like pin label names in the standard size and color.  Also a pin group name.
+</p>
+
 <pre>
 relay, even SPST, could use the split schematic: the coil and each switch could be separated on the schematic.
 </pre>
