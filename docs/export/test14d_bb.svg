@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.7in' height='0.33in' viewBox='0 0 50.4 23.76' >
+<g partID='854502850'><g  id="breadboard">
+ <g transform="matrix(1, 0, 0, 1, 0, 2.16)">
+  <g >
+   <g >
+    <!-- DIP package body -->
+    <rect  height="19.44" x="0" width="50.4" y="0" fill="#333333"/>
+    <!-- main DIP package body top -->
+    <g >
+     <!-- 3D package edge/border -->
+     <rect  height="1.76" id="top" x="0" width="50.4" y="0" fill="#3d3d3d"/>
+     <g transform="matrix(-1, 0, 0, -1, 50.4, 19.44)">
+      <rect  height="1.76" id="bottom" x="0" width="50.4" y="0"/>
+     </g>
+     <g transform="matrix(-1, 0, 0, -1, 50.4, 19.44)">
+      <polygon  id="right" fill="#1f1f1f" points="0,0,0,19.44,0.536,17.68,0.536,1.76"/>
+     </g>
+     <polygon  id="left" fill="#1f1f1f" points="0,0,0,19.44,0.536,17.68,0.536,1.76"/>
+    </g>
+    <g >
+     <!-- 3D inset for notch -->
+     <g transform="matrix(1,0,0,1,0,0)">
+      <polygon  id="left-upper-rect" fill="#1c1c1c" points="0.4,7.6,2.52,9.72,3.68,9.72,3.6,6.528,0.536,6.528"/>
+     </g>
+     <!-- top 3D arc for notch -->
+     <g transform="matrix(1, 0, 0, -1, 0, 19.44)">
+      <polygon  id="left-lower-rect" fill="#383838" points="0.4,7.6,2.52,9.72,3.68,9.72,3.6,6.528,0.536,6.528"/>
+     </g>
+     <!-- bottom 3D arc for notch -->
+     <path  d="m0.4,11.84l0,-4.24c2.8,0,2.8,4.24,0,4.24z" id="notch-bottom" fill="#262626"/>
+     <!-- bottom of notch in package body -->
+     <path  d="m0.536,1.76l0,4.768c4.08,0.24,4.08,6.144,0,6.384l0,0.008L4.144,12.92l0,-11.16z" id="cover" fill="#333333"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0.0,0)">
+     <circle  r="1.48" id="pin0-position" cx="4.68" cy="14.76" fill="#212121"/>
+    </g>
+    <g transform="matrix(1,0,0,1,0,0)">
+     <g  fill="#cccccc">
+      <g  fill-opacity="1" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;font-family:OCRA;" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace" fill="#cccccc" font-size="4.8" stroke="none">
+       <text  x="7.04" y="10.72" fill="#cccccc">TEMPLATE</text>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="matrix(1, 0, 0, 1, 0, -818.13)">
+  <g >
+   <g  opacity="1">
+    <!-- legs -->
+    <rect  height="2.159" x="2.51695" width="2.16" y="839.725" fill="#999999"/>
+    <!-- pin 1 leg -->
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="3.744,17.66,4.896,17.1304,4.896,16.5088,2.016,16.5088,2.016,17.66"/>
+    </g>
+    <!-- connector 0 body -->
+    <rect  height="3.125" x="2.52331" width="2.16" y="818.147" fill="#8c8c8c"/>
+    <rect  height="2.16" x="2.51704" width="2.16" y="818.138" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="3.744,1.348,2.016,1.348,2.016,2.5,4.896,2.5,4.896,1.8776"/>
+    </g>
+    <rect  height="3.124" x="45.7233" width="2.158" y="838.783" fill="#8c8c8c"/>
+    <rect  height="2.159" x="45.7252" width="2.158" y="839.732" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="36.576,17.66,38.304,17.66,38.304,16.5088,35.424,16.5088,35.424,17.1304"/>
+    </g>
+    <rect  height="3.125" x="45.7233" width="2.158" y="818.147" fill="#8c8c8c"/>
+    <rect  height="2.16" x="45.7252" width="2.158" y="818.131" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="36.576,1.348,35.424,1.8776,35.424,2.5,38.304,2.5,38.304,1.348"/>
+    </g>
+    <rect  height="3.124" x="9.72331" width="2.158" y="838.783" fill="#8c8c8c"/>
+    <rect  height="2.159" x="9.72535" width="2.158" y="839.732" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="10.656,16.5088,6.624,16.5088,6.624,17.1304,7.776,17.66,9.504,17.66,10.656,17.1304"/>
+    </g>
+    <rect  height="3.125" x="9.72331" width="2.158" y="818.147" fill="#8c8c8c"/>
+    <rect  height="2.16" x="9.72837" width="2.158" y="818.138" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="6.624,2.5,10.656,2.5,10.656,1.8776,9.504,1.348,7.776,1.348,6.624,1.8776"/>
+    </g>
+    <rect  height="3.124" x="38.5233" width="2.16" y="838.783" fill="#8c8c8c"/>
+    <rect  height="2.159" x="38.5234" width="2.16" y="839.732" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="33.696,16.5088,29.664,16.5088,29.664,17.1304,30.816,17.66,32.544,17.66,33.696,17.1304"/>
+    </g>
+    <rect  height="3.125" x="38.5233" width="2.16" y="818.147" fill="#8c8c8c"/>
+    <rect  height="2.16" x="38.5234" width="2.16" y="818.131" fill="#999999"/>
+    <g transform="matrix(1.25, 0, 0, 1.25, 0.00330609, 818.147)">
+     <polygon  fill="#8c8c8c" points="29.664,2.5,33.696,2.5,33.696,1.8776,32.544,1.348,30.816,1.348,29.664,1.8776"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</g>
+</g></svg>

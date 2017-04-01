@@ -1,71 +1,72 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="63" height="29.700001">
- <g id="breadboard">
-  <g transform="translate(0,-1022.6622)">
-   <g><!-- DIP package body -->
-   <rect width="61.298" x="0.8737309" y="1026.2367" height="22.559168" style="fill:#333333;fill-opacity:1;stroke:#333333;stroke-width:1.70787466;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10.24724745, 1.70787459;stroke-dashoffset:0"/><!-- main DIP package body top -->
-   <g opacity="1"><!-- 3D edge/border -->
-    <rect width="63" x="0.0041323118" y="1025.3835" height="2.2137501" style="fill:#3d3d3d" id="top"/>
-    <rect width="63" x="0.0041323118" y="1047.4697" height="2.2137501" id="bottom"/>
-    <polygon points="49.86,3.931 49.86,19.829 50.4,21.601 50.4,2.16 " style="fill:#141414" id="right" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-    <polygon points="0.54,3.931 0.54,19.829 0,21.601 0,2.16 " style="fill:#1f1f1f" id="left" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   </g>
-   <g opacity="1"><!-- notch and other orientation markers -->
-     <g opacity="1"><!-- 3D inset for notch -->
-       <polygon points="0.403,9.777 0.403,11.88 3.6,11.88 3.6,8.28 0.54,8.251 " style="fill:#1c1c1c" id="left-upper-rect" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- top 3D arc for notch in package body -->
-       <polygon points="3.6,11.88 0.403,11.88 0.403,13.981 0.54,15.517 3.6,15.517 " style="fill:#383838" id="left-lower-rect" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- bottom 3D arc for notch in package body -->
-     </g>
-     <path style="fill:#262626" id="slot" d="m 0.50788261,1034.9048 v 5.2487 c 1.32375019,-0.1537 2.35875019,-1.2612 2.35875019,-2.63 0,-1.3687 -1.02625,-2.465 -2.35875019,-2.6187 z"/><!-- bottom of notch in package body -->
-     <path style="fill:#303030" id="cover" d="m 0.67913261,1027.5972 v 5.3913 c 2.14250019,0.405 3.77250019,2.2762 3.77250019,4.5362 0,2.26 -1.6225,4.1401 -3.77250019,4.5451 v 0.01 H 5.1791328 v -14.4826 H 0.67913261 z"/><!-- piece 'behind' the notch, away from the pin 1 dot -->
-     <circle cx="4.6799998" cy="16.898001" style="fill:#212121" r="1.483" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- pin 1 marker dot -->
-   </g>
-   </g>
-   <g style="fill:#cccccc" transform="matrix(1.25,0,0,1.25,0,1022.6835)">
-    <g style="font-size:4.8px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:OCRA;-inkscape-font-specification:OCRA Bold" xml:space="preserve">
-     <text x="6.8" y="13.4" style="fill:#cccccc">TEMPLATE</text>
+    width="63" height="29.7">
+  <g id="breadboard">
+    <g transform="translate(0,2.7)">
+      <g><!-- DIP package body -->
+        <rect width="63" x="0" y="0" height="24.3" fill="#333333"/><!-- main DIP package body top -->
+        <g><!-- 3D package edge/border -->
+          <rect width="63" x="0" y="0" height="2.2" style="fill:#3d3d3d" id="top"/>
+          <rect width="63" x="0" y="0" height="2.2" id="bottom" transform="matrix(-1,0,0,-1,63,24.3)"/>
+          <polygon points="0,0 0,24.3 0.67,22.1 0.67,2.2 " style="fill:#1f1f1f" id="right" transform="matrix(-1,0,0,-1,63,24.3)"/>
+          <polygon points="0,0 0,24.3 0.67,22.1 0.67,2.2 " style="fill:#1f1f1f" id="left"/>
+        </g>
+        <g><!-- 3D inset for notch -->
+          <polygon points="0.5,9.5 3.15,12.15 4.6,12.15 4.5,8.16 0.67,8.16" style="fill:#1c1c1c" id="left-upper-rect" transform="matrix(1,0,0,1,0,0)"/><!-- top 3D arc for notch -->
+          <polygon points="0.5,9.5 3.15,12.15 4.6,12.15 4.5,8.16 0.67,8.16" style="fill:#383838" id="left-lower-rect" transform="matrix(1,0,0,-1,0,24.3)"/><!-- bottom 3D arc for notch -->
+          <path style="fill:#262626" id="notch-bottom" d="m 0.5,14.8 v -5.3 c 3.5,0 3.5,5.3 0,5.3 z"/><!-- bottom of notch in package body -->
+          <path style="fill:#333333" id="cover" d="m0.67,2.2v5.96c5.1,0.3 5.1,7.68 0,7.98v0.01H5.18v-13.95z"/>
+        </g>
+        <circle id="pin0-position" cx="5.85" cy="18.45" style="fill:#212121" r="1.85" transform="matrix(1,0,0,1,0.0,0)"/>
+        <g style="fill:#cccccc" transform="matrix(1,0,0,1,0,0)">
+          <g style="font-size:6;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;font-family:OCRA;" xml:space="preserve">
+          <text x="8.8" y="13.4" style="fill:#cccccc">TEMPLATE</text>
+          </g>
+        </g>
+      </g>
     </g>
-   </g>
-   <rect width="2.7" x="3.1541328" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/><!-- invisible -->
-   <rect width="2.7" x="3.146184" y="1049.6566" height="2.69875" style="fill:#999999"/><!-- pin 1 leg -->
-   <polygon points="4.68,22.075 6.12,21.413 6.12,20.636 2.52,20.636 2.52,22.075 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- connector 0 body -->
-   <rect width="2.7" x="3.1541328" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-   <rect width="2.7" x="3.146296" y="1022.6721" height="2.7" style="fill:#999999"/>
-   <polygon points="4.68,1.685 2.52,1.685 2.52,3.125 6.12,3.125 6.12,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.6975" x="57.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-   <rect width="2.6975" x="57.156559" y="1049.6646" height="2.69875" style="fill:#999999"/>
-   <polygon points="45.72,22.075 47.88,22.075 47.88,20.636 44.28,20.636 44.28,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.6975" x="57.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-   <rect width="2.6975" x="57.156559" y="1022.6642" height="2.7" style="fill:#999999"/>
-   <polygon points="45.72,1.685 44.28,2.347 44.28,3.125 47.88,3.125 47.88,1.685 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.6975" x="12.154133" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-   <rect width="2.6975" x="12.156689" y="1049.6646" height="2.69875" style="fill:#999999"/>
-   <polygon points="13.32,20.636 8.28,20.636 8.28,21.413 9.72,22.075 11.88,22.075 13.32,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.6975" x="12.154133" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-   <rect width="2.6975" x="12.160462" y="1022.6721" height="2.7" style="fill:#999999"/>
-   <polygon points="8.28,3.125 13.32,3.125 13.32,2.347 11.88,1.685 9.72,1.685 8.28,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.7" x="48.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-   <rect width="2.7" x="48.15419" y="1049.6646" height="2.69875" style="fill:#999999"/>
-   <polygon points="42.12,20.636 37.08,20.636 37.08,21.413 38.52,22.075 40.68,22.075 42.12,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-   <rect width="2.7" x="48.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-   <rect width="2.7" x="48.15419" y="1022.6642" height="2.7" style="fill:#999999"/>
-   <polygon points="37.08,3.125 42.12,3.125 42.12,2.347 40.68,1.685 38.52,1.685 37.08,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+    <g transform="translate(0,-1022.6622)">
+      <g opacity="1"><!-- legs -->
+        <rect width="2.7" x="3.146184" y="1049.6566" height="2.69875" style="fill:#999999"/><!-- pin 1 leg -->
+        <polygon points="4.68,22.075 6.12,21.413 6.12,20.636 2.52,20.636 2.52,22.075 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- connector 0 body -->
+        <rect width="2.7" x="3.1541328" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
+        <rect width="2.7" x="3.146296" y="1022.6721" height="2.7" style="fill:#999999"/>
+        <polygon points="4.68,1.685 2.52,1.685 2.52,3.125 6.12,3.125 6.12,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.6975" x="57.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
+        <rect width="2.6975" x="57.156559" y="1049.6646" height="2.69875" style="fill:#999999"/>
+        <polygon points="45.72,22.075 47.88,22.075 47.88,20.636 44.28,20.636 44.28,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.6975" x="57.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
+        <rect width="2.6975" x="57.156559" y="1022.6642" height="2.7" style="fill:#999999"/>
+        <polygon points="45.72,1.685 44.28,2.347 44.28,3.125 47.88,3.125 47.88,1.685 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.6975" x="12.154133" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
+        <rect width="2.6975" x="12.156689" y="1049.6646" height="2.69875" style="fill:#999999"/>
+        <polygon points="13.32,20.636 8.28,20.636 8.28,21.413 9.72,22.075 11.88,22.075 13.32,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.6975" x="12.154133" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
+        <rect width="2.6975" x="12.160462" y="1022.6721" height="2.7" style="fill:#999999"/>
+        <polygon points="8.28,3.125 13.32,3.125 13.32,2.347 11.88,1.685 9.72,1.685 8.28,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.7" x="48.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
+        <rect width="2.7" x="48.15419" y="1049.6646" height="2.69875" style="fill:#999999"/>
+        <polygon points="42.12,20.636 37.08,20.636 37.08,21.413 38.52,22.075 40.68,22.075 42.12,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+        <rect width="2.7" x="48.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
+        <rect width="2.7" x="48.15419" y="1022.6642" height="2.7" style="fill:#999999"/>
+        <polygon points="37.08,3.125 42.12,3.125 42.12,2.347 40.68,1.685 38.52,1.685 37.08,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+      </g>
+    </g>
   </g>
- </g>
- <!-- <g fill="#00f000" opacity="0.3" transform="translate(3,-0.5)"> -->
-   <!-- half the height -->
- <g fill="none" transform="translate(3,-0.5)">
-  <g transform="translate(0,27)">
-   <rect width="3" x="0" y="0" height="4" id="connector0"/>
-   <rect width="3" x="9" y="0" height="4" id="connector1"/>
-   <rect width="3" x="45" y="0" height="4" id="connector5"/>
-   <rect width="3" x="54" y="0" height="4" id="connector6"/>
+  <!-- <g fill="#00f000" opacity="0.3" transform="translate(3,-0.5)"> -->
+  <!-- half the height -->
+  <g fill="none" transform="translate(3,-0.5)">
+    <g transform="translate(0,27)">
+      <rect width="3" x="0" y="0" height="4" id="connector0"/>
+      <rect width="3" x="9" y="0" height="4" id="connector1"/>
+      <rect width="3" x="45" y="0" height="4" id="connector5"/>
+      <rect width="3" x="54" y="0" height="4" id="connector6"/>
+    </g>
+    <g transform="translate(0,0)">
+      <rect width="3" x="54" y="0" height="4" id="connector7"/>
+      <rect width="3" x="45" y="0" height="4" id="connector8"/>
+      <rect width="3" x="9" y="0" height="4" id="connector12"/>
+      <rect width="3" x="0" y="0" height="4" id="connector13"/>
+    </g>
   </g>
-  <g transform="translate(0,0)">
-   <rect width="3" x="54" y="0" height="4" id="connector7"/>
-   <rect width="3" x="45" y="0" height="4" id="connector8"/>
-   <rect width="3" x="9" y="0" height="4" id="connector12"/>
-   <rect width="3" x="0" y="0" height="4" id="connector13"/>
-  </g>
- </g>
 </svg>

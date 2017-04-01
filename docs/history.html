@@ -164,7 +164,15 @@ Delete extra precision digits.
 test14c_bb.svg content looks good.
 </p>
 <p>
+Why does the DIP package body (top/background) have both stroke and fill?  They are the same color, and there seems to be no need for a border.  Original from before the 3D border was added?
+Found that the part name text is not showing up because the font-size was set to 0 in the svg export.  Changing the svg element style from "font-size:4.8px;…" to "font-size:4.8;…" fixed it.
 
+Remove large transform offset from block of elements creating the DIP package body.
+Replace with offset to get (0,0) to top left corner of the DIP package body.
+Remove stroke from main DIP package body, and adjust size to compensate.
+Remove scaling from elements and adjust coordinates to compensate.
+Get rid of more etraneous precision digits.
+Remove duplicate connection pin piece
 </p>
 
 	</body>
