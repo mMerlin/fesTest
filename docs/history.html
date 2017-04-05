@@ -122,7 +122,7 @@ test12a_schem.svg content looks good, rotated 90 degrees from base.
 test12b_schem.svg content looks good, rotated 90 degrees from base.</p>
 
 <h4>test13</h4>
-<p>Tweak for better svg verion 1.2 tiny conformance.
+<p>Tweak for better svg version 1.2 tiny conformance.
 Remove Adobe Illustrator generator comment.
 Remove doctype.
 Remove id from svg element.
@@ -163,26 +163,34 @@ Add group wrappers around related element sets:
 Delete extra precision digits.
 test14c_bb.svg content looks good.
 </p>
-<p>
-Why does the DIP package body (top/background) have both stroke and fill?  They are the same color, and there seems to be no need for a border.  Original from before the 3D border was added?
+<p>Why does the DIP package body (top/background) have both stroke and fill?  They are the same colour, and there seems to be no need for a border.  Original from before the 3D border was added?
 Found that the part name text is not showing up because the font-size was set to 0 in the svg export.  Changing the svg element style from "font-size:4.8px;…" to "font-size:4.8;…" fixed it.
 
 Remove large transform offset from block of elements creating the DIP package body.
 Replace with offset to get (0,0) to top left corner of the DIP package body.
 Remove stroke from main DIP package body, and adjust size to compensate.
 Remove scaling from elements and adjust coordinates to compensate.
-Get rid of more etraneous precision digits.
+Get rid of more extraneous precision digits.
 Remove duplicate connection pin piece
 test14d_bb.svg content looks good.
 </p>
 <p>
 Add physical dimensions with units, and viewBox scaling factors.
-Attempt to create reuseable components with defs: Visible in Fritzing, but failed to export to svg.
+Attempt to create reusable components with defs: Visible in Fritzing, but failed to export to svg.
 - kept in file, but commented out, with sample usage references.
-Get rid of the large offset for the pin leg graphics, adjustusting element offsets to compensate.
+Get rid of the large offset for the pin leg graphics, adjusting element offsets to compensate.
 Simplify the pin leg graphics, and reduce to common coordinates with simple multiples of 0.1 in offsets.
 Group repeating leg graphics sections, and move common attributes to the groups.
 test14e_bb.svg content looks good, and leg connections look and work correctly in Fritzing.
 </p>
+
+<h4>test15</h4>
+<p>Change to version 1.2 tiny header.
+Remove more unneeded id attributes.
+Tweak leg graphics coordinates to symmetrical positions.
+Simplify icon graphics and match to breadboard coordinates.
+test15_bb.svg content looks good, and leg connections look and work correctly in Fritzing.
+</p>
+
 	</body>
 </html>

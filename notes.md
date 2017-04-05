@@ -34,14 +34,14 @@ The terminal rectangles are 3x3 and align to (overlapping) the outer end of the 
 The viewBox is setting to 100 px / inch
 The positioning / spacing puts the centres 0.3 inch apart, and the complete rectangles are included in the viewBox, with a height of 0.33 inches.  Both the connector and terminal extend beyond the 0.1 inch multiple distance.
 
-The terminal rectange, without id, is duplicated inside the breadboard group.
+The terminal rectangle, without id, is duplicated inside the breadboard group.
 The seems to be a lot of z order overlap, hiding parts of elements that are underneath.
 
 dip package body is 0.27x0.4 inches, offset vertically only 0.03 inches from viewBox origin.
-pins / legs extend 0.03 inch both top and bottom, with the 0.1 inch grid center point being 0.015 inch outside of the body.
-Origin of 0.1 inch grid for pin connection center points is 0.045,0.015 from viewBox origin.
+pins / legs extend 0.03 inch both top and bottom, with the 0.1 inch grid centre point being 0.015 inch outside of the body.
+Origin of 0.1 inch grid for pin connection centre points is 0.045,0.015 from viewBox origin.
 
-**I** don't want the pin/lead/leg graphics to extend past the 0.1 inch grid.  Stop the graphics at the center of the breadboard holes.
+**I** don't want the pin/lead/leg graphics to extend past the 0.1 inch grid.  Stop the graphics at the centre of the breadboard holes.
 
 ## Errata
 
@@ -59,6 +59,39 @@ My background is computer programming, so I am quit comfortable using text/xml e
 
 While Some of that will be due to not understanding the constraints needed for Fritzing, it would be real helpful if Fritzing was consistent.  The parts look just fine in the Fritzing views, and also when exported as png or jpeg files.  However export to svg is a lot more problematic.  Content is simply dropped with no warning.  Once you know what to look for, it easy to check the generated export files in a text editor, and verify that the expected elements are simply not there.  That was the case with the issue someone else reported for text added to the schematic view.  This one is a bit more insidious.  Intending to reduce some duplication of common graphics pieces, I created some svg defs.  The associated use element exist in the exported svg file, but the defs (definitions) elements do not get carried across.
 
-It appears that the svg export logic is only exporting the content of the view specifiy group element, without also pulling in the required supporting background elements.  That is not a complete answer though.  Manually added the defs, as well as the also needed xmlns:xlink attribute did not get the elements to actually show up.  Nor did moving the defs element inside the (in this case) breadboard group element, and manually adding the xmlns:xlink attribute.  That last did get the defs into the exported svg file, but viewer program (eog) did not show them.  Firefox partially displayed it, be the graphics were a bit corrupt.  I appears that generated svg file is not completely valid.
+It appears that the svg export logic is only exporting the content of the view specify group element, without also pulling in the required supporting background elements.  That is not a complete answer though.  Manually added the defs, as well as the also needed xmlns:xlink attribute did not get the elements to actually show up.  Nor did moving the defs element inside the (in this case) breadboard group element, and manually adding the xmlns:xlink attribute.  That last did get the defs into the exported svg file, but viewer program (eog) did not show them.  Firefox partially displayed it, be the graphics were a bit corrupt.  I appears that generated svg file is not completely valid.
 
 In the cases tried, the Fritzing view displayed the content correctly, but the exported svg file was invalid or incomplete.
+
+### font size in pixels
+
+http://forum.fritzing.org/t/units-on-font-style-in-svg-part-files-do-not-export-as-svg/3462/1
+
+Text with (an svg) font size specified in px units does show up at the right size (or at all) using export ¦ as Image ¦ SVG.  It appears that the export software does not understand the units, and ends up exporting with a font-size of "0".  Simply removing the units from the font-size in the style attribute works around the problem, but a more general solution would be to fix the export logic.
+
+```
+grep -c -E "font-size:[0-9]+?(\.[0-9]*)?px" /usr/share/fritzing/parts/svg/core/*/*.svg | grep ":[1-9]" | wc
+107 files found, although the icon files probably do not matter.  They are never exported.
+grep -c -E "font-size:[0-9]+?(\.[0-9]*)?[a-z]" /usr/share/fritzing/parts/svg/core/*/*.svg | grep ":[1-9]" | wc
+108 files found, although the icon files probably do not matter.  They are never exported.
+```
+
+Simple (hopefully) reproducible example.  In an empty sketch:
+* find and place a TLP621
+* Fit the breadboard view to the window
+* File ¦ Export ¦ as Image ¦ SVG ¦ test_bb.svg
+Outside of Fritzing, view the original and exported image files
+* …/fritzing/parts/svg/core/breadboard/Optocoupler_TLP621_breadboard.svg
+* test_bb.svg
+The "TLP" and "621" text is visible in the original, but not in the export.
+Use a text editor to look at the 2 files.
+* In Optocoupler_TLP621_breadboard.svg, the text elements for TLP and 621 are wrapped in groups with style attributes.  Both start with "font-size:4.44444418px".
+* In test_bb.svg, the matching text elements are also wrapped inside group elements, but now the style does not have a font-size entry, and there is new font-size attribute set to "0".  Changing that "0" to either "4.44444418px" or "4.44444418" gets the text to show up, although the size is wrong.
+
+* Exit everything without saving.
+* Change font-size:4.44444418px to font-size:4.44444418 in Optocoupler_TLP621_breadboard.svg.
+* Repeat the find, place, fit, export, view.
+* The text is visible in both the original and export.
+* Viewing the export file in a text editor shows that the font-size has still been removed from the style attribute, but now the font-size attribute is set to "3.2".
+
+As a guess, the parsing code for the svg export is attempting to convert the whole "4.44444418px" string to a number, which fails and gives 0.  It is not expecting or looking for units.
