@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.2" baseProfile="tiny"
-	 id="Ebene_1" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36.9px" height="63.9px"
-	 viewBox="0 0 36.9 63.9" xml:space="preserve">
-<g id="silkscreen">
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" points="22.929,0.429 36.45,0.429 36.45,63.45 0.45,63.45 0.45,0.429 
-		13.928,0.429 	"/>
+<svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px" y="0px" width="36.9px" height="63.9px"
+  viewBox="0 0 36.9 63.9" xml:space="preserve">
+<g id="silkscreen" fill="none" stroke="#FFFFFF" stroke-width="0.75" transform="translate(0.375,0.375)"><!-- half of the stroke-witth -->
+	<polyline points="22.35,0 36.15,0 36.15,63.15 0,63.15 0,0 13.8,0"/>
 </g>
-<g id="copper0">
+<g id="copper0" fill="none" stroke="#FFBF00" stroke-width="1.225" transform="translate(4.95,4.95)">
 	<g id="copper1">
-		<circle id="connector13pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="31.95" cy="4.95" r="2.475"/>
-		<circle id="connector1pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="4.95" cy="13.95" r="2.475"/>
-		<circle id="connector12pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="31.95" cy="13.95" r="2.475"/>
-		<circle id="connector5pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="4.95" cy="49.95" r="2.475"/>
-		<circle id="connector8pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="31.95" cy="49.95" r="2.475"/>
-		<circle id="connector6pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="4.95" cy="58.95" r="2.475"/>
-		<circle id="connector7pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="31.95" cy="58.95" r="2.475"/>
-		<circle id="connector0pin" fill="none" stroke="#FFBF00" stroke-width="1.224" cx="4.95" cy="4.95" r="2.475"/>
-		<rect x="2.475" y="2.476" fill="none" stroke="#FFBF00" stroke-width="1.224" width="4.949" height="4.949"/>
+		<circle id="connector0pin" cx="0" cy="0" r="2.475"/>
+		<circle id="connector1pin" cx="0" cy="9" r="2.475"/>
+		<circle id="connector5pin" cx="0" cy="45" r="2.475"/>
+		<circle id="connector6pin" cx="0" cy="54" r="2.475"/>
+		<g transform="translate(27,0)">
+			<circle id="connector7pin" cx="0" cy="54" r="2.475"/>
+			<circle id="connector8pin" cx="0" cy="45" r="2.475"/>
+			<circle id="connector12pin" cx="0" cy="9" r="2.475"/>
+			<circle id="connector13pin" cx="0" cy="0" r="2.475"/>
+		</g>
+		<rect x="-2.475" y="-2.475" width="4.95" height="4.95"/><!-- offset by radius -->
 	</g>
 </g>
 </svg>
