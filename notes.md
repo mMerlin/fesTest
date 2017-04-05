@@ -42,3 +42,23 @@ pins / legs extend 0.03 inch both top and bottom, with the 0.1 inch grid center 
 Origin of 0.1 inch grid for pin connection center points is 0.045,0.015 from viewBox origin.
 
 **I** don't want the pin/lead/leg graphics to extend past the 0.1 inch grid.  Stop the graphics at the center of the breadboard holes.
+
+## Errata
+
+### Environment
+Fedora 24
+x86_64
+Version 0.9.2 (b8d2d5970658f0bed09c661c9
+
+Have not upgraded to 0.9.3, since trying to stay with what is provided in the Fedora repos.
+
+### defs and use
+I've been explore Fritzing and creating new parts.  Been learning, finding, and working around either actual bugs or simple lack of knowledge.  This one looks worth reporting.
+
+My background is computer programming, so I am quit comfortable using text/xml editors with the svg files for the part layers.  I am finding several cases where things that look perfectly valid viewing the svg files, or even the Fritzing view fail to export as svg images.  
+
+While Some of that will be due to not understanding the constraints needed for Fritzing, it would be real helpful if Fritzing was consistent.  The parts look just fine in the Fritzing views, and also when exported as png or jpeg files.  However export to svg is a lot more problematic.  Content is simply dropped with no warning.  Once you know what to look for, it easy to check the generated export files in a text editor, and verify that the expected elements are simply not there.  That was the case with the issue someone else reported for text added to the schematic view.  This one is a bit more insidious.  Intending to reduce some duplication of common graphics pieces, I created some svg defs.  The associated use element exist in the exported svg file, but the defs (definitions) elements do not get carried across.
+
+It appears that the svg export logic is only exporting the content of the view specifiy group element, without also pulling in the required supporting background elements.  That is not a complete answer though.  Manually added the defs, as well as the also needed xmlns:xlink attribute did not get the elements to actually show up.  Nor did moving the defs element inside the (in this case) breadboard group element, and manually adding the xmlns:xlink attribute.  That last did get the defs into the exported svg file, but viewer program (eog) did not show them.  Firefox partially displayed it, be the graphics were a bit corrupt.  I appears that generated svg file is not completely valid.
+
+In the cases tried, the Fritzing view displayed the content correctly, but the exported svg file was invalid or incomplete.

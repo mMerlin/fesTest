@@ -1,7 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="63" height="29.7">
+  x="0" y="0" width="0.7in" height="0.33in"
+  viewBox="0 0 63 29.7" xml:space="preserve">
   <g id="breadboard">
+    <!-- <defs>
+      <polygon id="corner-leg" points="-1.35,-0.575 -1.35,1.225 3.15,1.225 3.15,0.25 1.35,-0.575"/>
+      <polygon id="mid-leg" points="-1.35,-0.575 -3.15,0.25 -3.15,1.225 3.15,1.225 3.15,0.25 1.35,-0.575"/>
+      <use x="0" y="0" xlink:href="#corner-leg"/>
+      <use x="9" y="0" xlink:href="#mid-leg"/>
+      <use x="45" y="0" xlink:href="#mid-leg"/>
+      <use x="54" y="0" xlink:href="#corner-leg" tranform="matrix(-1,0,0,1,0,0)"/>
+    </defs> -->
     <g transform="translate(0,2.7)">
       <g><!-- DIP package body -->
         <rect width="63" x="0" y="0" height="24.3" fill="#333333"/><!-- main DIP package body top -->
@@ -25,48 +34,52 @@
         </g>
       </g>
     </g>
-    <g transform="translate(0,-1022.6622)">
-      <g opacity="1"><!-- legs -->
-        <rect width="2.7" x="3.146184" y="1049.6566" height="2.69875" style="fill:#999999"/><!-- pin 1 leg -->
-        <polygon points="4.68,22.075 6.12,21.413 6.12,20.636 2.52,20.636 2.52,22.075 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/><!-- connector 0 body -->
-        <rect width="2.7" x="3.1541328" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-        <rect width="2.7" x="3.146296" y="1022.6721" height="2.7" style="fill:#999999"/>
-        <polygon points="4.68,1.685 2.52,1.685 2.52,3.125 6.12,3.125 6.12,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.6975" x="57.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-        <rect width="2.6975" x="57.156559" y="1049.6646" height="2.69875" style="fill:#999999"/>
-        <polygon points="45.72,22.075 47.88,22.075 47.88,20.636 44.28,20.636 44.28,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.6975" x="57.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-        <rect width="2.6975" x="57.156559" y="1022.6642" height="2.7" style="fill:#999999"/>
-        <polygon points="45.72,1.685 44.28,2.347 44.28,3.125 47.88,3.125 47.88,1.685 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.6975" x="12.154133" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-        <rect width="2.6975" x="12.156689" y="1049.6646" height="2.69875" style="fill:#999999"/>
-        <polygon points="13.32,20.636 8.28,20.636 8.28,21.413 9.72,22.075 11.88,22.075 13.32,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.6975" x="12.154133" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-        <rect width="2.6975" x="12.160462" y="1022.6721" height="2.7" style="fill:#999999"/>
-        <polygon points="8.28,3.125 13.32,3.125 13.32,2.347 11.88,1.685 9.72,1.685 8.28,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.7" x="48.154137" y="1048.4785" height="3.9050002" style="fill:#8c8c8c"/>
-        <rect width="2.7" x="48.15419" y="1049.6646" height="2.69875" style="fill:#999999"/>
-        <polygon points="42.12,20.636 37.08,20.636 37.08,21.413 38.52,22.075 40.68,22.075 42.12,21.413 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
-        <rect width="2.7" x="48.154137" y="1022.6834" height="3.90625" style="fill:#8c8c8c"/>
-        <rect width="2.7" x="48.15419" y="1022.6642" height="2.7" style="fill:#999999"/>
-        <polygon points="37.08,3.125 42.12,3.125 42.12,2.347 40.68,1.685 38.52,1.685 37.08,2.347 " style="fill:#8c8c8c" transform="matrix(1.25,0,0,1.25,0.00413261,1022.6835)"/>
+    <g transform="translate(4.5,1.35)">
+      <!-- legs: origin is center of the top left pin on the 0.1 inch grid -->
+      <g  style="fill:#999999" transform="translate(-1.35,-1.35)">
+        <!-- origin is top left of the top left pin connection rectangle -->
+        <!-- <g transform="translate(0,27)"> -->
+        <g transform="translate(0,27)">
+          <!-- origin is the bottom row of pins -->
+          <rect width="2.7" x="0" y="0" height="2.7"/>
+          <rect width="2.7" x="9" y="0" height="2.7"/>
+          <rect width="2.7" x="45" y="0" height="2.7"/>
+          <rect width="2.7" x="54" y="0" height="2.7"/>
+        </g>
+        <rect width="2.7" x="54" y="0" height="2.7"/>
+        <rect width="2.7" x="45" y="0" height="2.7"/>
+        <rect width="2.7" x="9" y="0" height="2.7"/>
+        <rect width="2.7" x="0" y="0" height="2.7"/>
+        <g style="fill:#8c8c8c">
+          <g transform="matrix(1,0,0,-1,0,29.7)">
+            <!-- 29.7 == 27 + 2.7; 2.7 is the pin connection rectangle height -->
+            <polygon points="0,2.08 0,3.875 4.5,3.925 4.5,2.95 2.7,2.125"/>
+            <polygon points="0,2.08 -1.8,2.95 -1.8,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="translate(9,0)"/>
+            <polygon points="0,2.08 -1.8,2.95 -1.8,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="translate(45,0)"/>
+            <polygon points="0,2.08 0,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="matrix(-1,0,0,1,56.7,0)"/>
+            <!-- 56.7 == 54 + + 2.7; 2.7 is the pin connection rectangle width -->
+          </g>
+          <polygon points="0,2.08 0,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="matrix(-1,0,0,1,56.7,0)"/>
+          <polygon points="0,2.08 -1.8,2.95 -1.8,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="translate(45,0)"/>
+          <polygon points="0,2.08 -1.8,2.95 -1.8,3.875 4.5,3.925 4.5,2.95 2.7,2.125" transform="translate(9,0)"/>
+          <polygon points="0,2.08 0,3.875 4.5,3.925 4.5,2.95 2.7,2.125"/>
+        </g>
       </g>
     </g>
-  </g>
-  <!-- <g fill="#00f000" opacity="0.3" transform="translate(3,-0.5)"> -->
-  <!-- half the height -->
-  <g fill="none" transform="translate(3,-0.5)">
-    <g transform="translate(0,27)">
-      <rect width="3" x="0" y="0" height="4" id="connector0"/>
-      <rect width="3" x="9" y="0" height="4" id="connector1"/>
-      <rect width="3" x="45" y="0" height="4" id="connector5"/>
-      <rect width="3" x="54" y="0" height="4" id="connector6"/>
     </g>
-    <g transform="translate(0,0)">
-      <rect width="3" x="54" y="0" height="4" id="connector7"/>
-      <rect width="3" x="45" y="0" height="4" id="connector8"/>
-      <rect width="3" x="9" y="0" height="4" id="connector12"/>
-      <rect width="3" x="0" y="0" height="4" id="connector13"/>
-    </g>
+    <g fill="none" transform="translate(3,-0.5)">
+      <!-- offset from center by half the dimensions, extends outside viewBox -->
+      <g transform="translate(0,27)">
+        <rect width="3" x="0" y="0" height="4" id="connector0"/>
+        <rect width="3" x="9" y="0" height="4" id="connector1"/>
+        <rect width="3" x="45" y="0" height="4" id="connector5"/>
+        <rect width="3" x="54" y="0" height="4" id="connector6"/>
+      </g>
+      <g transform="translate(0,0)">
+        <rect width="3" x="54" y="0" height="4" id="connector7"/>
+        <rect width="3" x="45" y="0" height="4" id="connector8"/>
+        <rect width="3" x="9" y="0" height="4" id="connector12"/>
+        <rect width="3" x="0" y="0" height="4" id="connector13"/>
+      </g>
   </g>
 </svg>
