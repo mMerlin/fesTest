@@ -9,6 +9,29 @@ $ cd part
 $ zip -u ../testPart.fzpz *.svg *.fzp
 ```
 
+### Structure and naming
+
+The fzpz part file is an ordinary zip file containing
+* part.«part-name».fzp
+* svg.breadboard.«breadboard-image-name».svg
+* svg.icon.«icon-image-name».svg
+* svg.pcb.«pcb-image-name».svg
+* svg.schematic.«schematic-image-name».svg
+
+part.«part-name».fzp is an xml file that conatins (in part) a "views" element wrapping four "«view»View" elements («view» is icon, breadboard, schematic, pcb).  Each "«view»View" element contains a "layers" element with an "image" attribute in the form "«view»/«view-image-name».svg".  IE The svg.«view».«view-image-name».svg image file is referenced as «view»/«view-image-name».svg.
+
+* fzp file elements : connectors ¦ connector ¦ views ¦ «view»View ¦ p
+  * attributes
+    * layer="«view»"
+    * svgId="«connector_pin_id»"
+      * id attribute of the element in the svg file for the specified view of the containing connector that defines where the pin will be highlighted shown (red) and hightlighted (blue).  To connect to the pin, the outline for this element must be *touched* graphically.
+    * terminalId="«connector_pin_terminal_id»"
+      * id attribute of the element in the svg file for the specified view of the containing connector that defines where connections to the pin will snap to.
+      * optional: When not specified, the center point of the svgId will be used.
+    * Neither of the svgId or terminalId elements (in the svg file) need to be children of the «view» element.  Fritzing will use them for them for functionality in the view tabs.  They can be invisible elements (no border, no fill).  If they are NOT children of the «view» element, they will also not be exported to svg images.  If they are invisible, that does not mater.
+
+It *seems* that having the svg id="connector«n»terminal" elements as children of the id="«view»" element is not enough to have them exported to the svg view images.  The existing rect elements were exported as empty groups (rect elment attributes were on a group element instead)
+
 ## file paths
 ```
 ~/.config/Fritzing/bins/*.fzb
@@ -48,9 +71,9 @@ Origin of 0.1 inch grid for pin connection centre points is 0.045,0.015 from vie
 ### Environment
 Fedora 24
 x86_64
-Version 0.9.2 (b8d2d5970658f0bed09c661c9
+Fritzing Version 0.9.2 (b8d2d5970658f0bed09c661c9
 
-Have not upgraded to 0.9.3, since trying to stay with what is provided in the Fedora repos.
+I have not upgraded to 0.9.3, since trying to stay with what is provided in the Fedora repos.
 
 ### defs and use
 I've been explore Fritzing and creating new parts.  Been learning, finding, and working around either actual bugs or simple lack of knowledge.  This one looks worth reporting.
@@ -95,3 +118,24 @@ Use a text editor to look at the 2 files.
 * Viewing the export file in a text editor shows that the font-size has still been removed from the style attribute, but now the font-size attribute is set to "3.2".
 
 As a guess, the parsing code for the svg export is attempting to convert the whole "4.44444418px" string to a number, which fails and gives 0.  It is not expecting or looking for units.
+
+### connector terminal from view layer not exported to svg
+
+http://forum.fritzing.org/t/connector-terminal-from-view-layer-not-exported-to-svg/3546
+
+It appears that the svg export does not handle connector terminal rectangles that are part of the view (breadboard in this case) layer.  During export, the "rect" element is replaced by "g" element with the same attributes, with values adjusted for scaling.  For example, with a breadboard svg file containing
+```
+<!-- origin is the bottom row of pins on 0.1 inch grid -->
+<rect width="2.7" x="0" y="0" height="2.7" id="connector0terminal"/>
+```
+The exported breadboard view svg file contained
+```
+<!-- origin is the bottom row of pins on 0.1 inch grid -->
+<g width="2.16" x="0" y="0" id="connector0terminal" height="2.16"/>
+```
+Removing id="connector0terminal" from the rect element (and putting it elsewhere) worked correctly, exporting
+```
+<!-- origin is the bottom row of pins on 0.1 inch grid -->
+<rect width="2.16" x="0" y="0" height="2.16"/>
+```
+Either of the version look and work correct in the Fritzing view.  It is just he export as SVG that gets messed up.
