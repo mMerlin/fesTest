@@ -1,39 +1,43 @@
 # notes
 
 ## More reference links
+
 * [online guid generator](https://guidgenerator.com/)
 
 ## Create fzpz part file
-```
-$ cd part
-$ zip -u ../testPart.fzpz *.svg *.fzp
+
+```sh
+cd part
+zip -u ../testPart.fzpz *.svg *.fzp
 ```
 
 ### Structure and naming
 
 The fzpz part file is an ordinary zip file containing
+
 * part.«part-name».fzp
 * svg.breadboard.«breadboard-image-name».svg
 * svg.icon.«icon-image-name».svg
 * svg.pcb.«pcb-image-name».svg
 * svg.schematic.«schematic-image-name».svg
 
-part.«part-name».fzp is an xml file that conatins (in part) a "views" element wrapping four "«view»View" elements («view» is icon, breadboard, schematic, pcb).  Each "«view»View" element contains a "layers" element with an "image" attribute in the form "«view»/«view-image-name».svg".  IE The svg.«view».«view-image-name».svg image file is referenced as «view»/«view-image-name».svg.
+part.«part-name».fzp is an xml file that contains (in part) a "views" element wrapping four "«view»View" elements («view» is icon, breadboard, schematic, pcb).  Each "«view»View" element contains a "layers" element with an "image" attribute in the form "«view»/«view-image-name».svg".  IE The svg.«view».«view-image-name».svg image file is referenced as «view»/«view-image-name».svg.
 
 * fzp file elements : connectors ¦ connector ¦ views ¦ «view»View ¦ p
   * attributes
     * layer="«view»"
     * svgId="«connector_pin_id»"
-      * id attribute of the element in the svg file for the specified view of the containing connector that defines where the pin will be highlighted shown (red) and hightlighted (blue).  To connect to the pin, the outline for this element must be *touched* graphically.
+      * id attribute of the element in the svg file for the specified view of the containing connector that defines where the pin will be highlighted shown (red) and highlighted (blue).  To connect to the pin, the outline for this element must be *touched* graphically.
     * terminalId="«connector_pin_terminal_id»"
       * id attribute of the element in the svg file for the specified view of the containing connector that defines where connections to the pin will snap to.
       * optional: When not specified, the center point of the svgId will be used.
     * Neither of the svgId or terminalId elements (in the svg file) need to be children of the «view» element.  Fritzing will use them for them for functionality in the view tabs.  They can be invisible elements (no border, no fill).  If they are NOT children of the «view» element, they will also not be exported to svg images.  If they are invisible, that does not mater.
 
-It *seems* that having the svg id="connector«n»terminal" elements as children of the id="«view»" element is not enough to have them exported to the svg view images.  The existing rect elements were exported as empty groups (rect elment attributes were on a group element instead)
+It *seems* that having the svg id="connector«n»terminal" elements (terminalId attribute of fzp file path module ¦ connectors ¦ connector ¦ views ¦ «view_name»View ¦ p ) as children of the id="«view_name»" element is not enough to have them exported to the svg view images.  The existing rect elements were exported as empty groups (rect element attributes were on a group element instead).  Seems to be a bug.
 
 ## file paths
-```
+
+```sh
 ~/.config/Fritzing/bins/*.fzb
 ~/.config/Fritzing/parts/svg/user/«view»/*.svg
 ~/.config/Fritzing/parts/user/*.fzp
@@ -43,8 +47,9 @@ It *seems* that having the svg id="connector«n»terminal" elements as children 
 ```
 
 ## Finding files
-```
-$ find /usr/share/fritzing/ -iname "*dip_relay*" -type f -print
+
+```sh
+find /usr/share/fritzing/ -iname "*dip_relay*" -type f -print
 ```
 
 What is the scaling of a breadboard view export image as svg?  A wire across the gap in a breadboard (0.3 inches?) is
@@ -69,6 +74,7 @@ Origin of 0.1 inch grid for pin connection centre points is 0.045,0.015 from vie
 ## Errata
 
 ### Environment
+
 Fedora 24
 x86_64
 Fritzing Version 0.9.2 (b8d2d5970658f0bed09c661c9
@@ -76,23 +82,24 @@ Fritzing Version 0.9.2 (b8d2d5970658f0bed09c661c9
 I have not upgraded to 0.9.3, since trying to stay with what is provided in the Fedora repos.
 
 ### defs and use
-I've been explore Fritzing and creating new parts.  Been learning, finding, and working around either actual bugs or simple lack of knowledge.  This one looks worth reporting.
 
-My background is computer programming, so I am quit comfortable using text/xml editors with the svg files for the part layers.  I am finding several cases where things that look perfectly valid viewing the svg files, or even the Fritzing view fail to export as svg images.  
+I've been exploring Fritzing and creating new parts.  Been learning, finding, and working around either actual bugs or simple lack of knowledge.  This one looks worth reporting.
+
+My background is computer programming, so I am quite comfortable using text/xml editors with the svg files for the part layers.  I am finding several cases where things that look perfectly valid viewing the svg files, or even the Fritzing view fail to export as svg images.
 
 While Some of that will be due to not understanding the constraints needed for Fritzing, it would be real helpful if Fritzing was consistent.  The parts look just fine in the Fritzing views, and also when exported as png or jpeg files.  However export to svg is a lot more problematic.  Content is simply dropped with no warning.  Once you know what to look for, it easy to check the generated export files in a text editor, and verify that the expected elements are simply not there.  That was the case with the issue someone else reported for text added to the schematic view.  This one is a bit more insidious.  Intending to reduce some duplication of common graphics pieces, I created some svg defs.  The associated use element exist in the exported svg file, but the defs (definitions) elements do not get carried across.
 
-It appears that the svg export logic is only exporting the content of the view specify group element, without also pulling in the required supporting background elements.  That is not a complete answer though.  Manually added the defs, as well as the also needed xmlns:xlink attribute did not get the elements to actually show up.  Nor did moving the defs element inside the (in this case) breadboard group element, and manually adding the xmlns:xlink attribute.  That last did get the defs into the exported svg file, but viewer program (eog) did not show them.  Firefox partially displayed it, be the graphics were a bit corrupt.  I appears that generated svg file is not completely valid.
+It appears that the svg export logic is only exporting the content of the view specific group element, without also pulling in the required supporting background elements.  That is not a complete answer though.  Manually added the defs, as well as the also needed xmlns:xlink attribute did not get the elements to actually show up.  Nor did moving the defs element inside the (in this case) breadboard group element, and manually adding the xmlns:xlink attribute.  That last did get the defs into the exported svg file, but viewer program (eog) did not show them.  Firefox partially displayed it, be the graphics were a bit corrupt.  I appears that generated svg file is not completely valid.
 
 In the cases tried, the Fritzing view displayed the content correctly, but the exported svg file was invalid or incomplete.
 
 ### font size in pixels
 
-http://forum.fritzing.org/t/units-on-font-style-in-svg-part-files-do-not-export-as-svg/3462/1
+<http://forum.fritzing.org/t/units-on-font-style-in-svg-part-files-do-not-export-as-svg/3462/1>
 
 Text with (an svg) font size specified in px units does show up at the right size (or at all) using export ¦ as Image ¦ SVG.  It appears that the export software does not understand the units, and ends up exporting with a font-size of "0".  Simply removing the units from the font-size in the style attribute works around the problem, but a more general solution would be to fix the export logic.
 
-```
+```sh
 grep -c -E "font-size:[0-9]+?(\.[0-9]*)?px" /usr/share/fritzing/parts/svg/core/*/*.svg | grep ":[1-9]" | wc
 107 files found, although the icon files probably do not matter.  They are never exported.
 grep -c -E "font-size:[0-9]+?(\.[0-9]*)?[a-z]" /usr/share/fritzing/parts/svg/core/*/*.svg | grep ":[1-9]" | wc
@@ -100,6 +107,7 @@ grep -c -E "font-size:[0-9]+?(\.[0-9]*)?[a-z]" /usr/share/fritzing/parts/svg/cor
 ```
 
 Simple (hopefully) reproducible example.  In an empty sketch:
+
 * find and place a TLP621
 * Fit the breadboard view to the window
 * File ¦ Export ¦ as Image ¦ SVG ¦ test_bb.svg
@@ -121,21 +129,66 @@ As a guess, the parsing code for the svg export is attempting to convert the who
 
 ### connector terminal from view layer not exported to svg
 
-http://forum.fritzing.org/t/connector-terminal-from-view-layer-not-exported-to-svg/3546
+<http://forum.fritzing.org/t/connector-terminal-from-view-layer-not-exported-to-svg/3546>
 
 It appears that the svg export does not handle connector terminal rectangles that are part of the view (breadboard in this case) layer.  During export, the "rect" element is replaced by "g" element with the same attributes, with values adjusted for scaling.  For example, with a breadboard svg file containing
-```
+
+```svg
 <!-- origin is the bottom row of pins on 0.1 inch grid -->
 <rect width="2.7" x="0" y="0" height="2.7" id="connector0terminal"/>
 ```
+
 The exported breadboard view svg file contained
-```
+
+```svg
 <!-- origin is the bottom row of pins on 0.1 inch grid -->
 <g width="2.16" x="0" y="0" id="connector0terminal" height="2.16"/>
 ```
+
 Removing id="connector0terminal" from the rect element (and putting it elsewhere) worked correctly, exporting
-```
+
+```svg
 <!-- origin is the bottom row of pins on 0.1 inch grid -->
 <rect width="2.16" x="0" y="0" height="2.16"/>
 ```
-Either of the version look and work correct in the Fritzing view.  It is just he export as SVG that gets messed up.
+
+Either of the versions look and work correctly in the Fritzing view.  It is just the export as SVG that gets messed up.
+
+### fz crash when both bus and subpart in the same part
+
+<https://github.com/fritzing/fritzing-app/issues/3329>
+
+I have been exploring Fritzing part creation, and found a problem.  If both internal connections and split schematic are implemented in the same part, Fritzing crashes after placing the part.  It crashes faster if one of the subparts is moved.
+
+In the sample (crashing) part, hiding (block comment) the buses element in the fzp file gets the subparts to work.  Hiding the schematic-subparts element and unhiding the schematic element in the svg file gets the internal connections to work.
+
+EDIT:
+keeping the schematic group/layer/wrapper did not fix the problem
+
+### schematic subpart text cropped
+
+<https://github.com/fritzing/fritzing-app/issues/3332>
+
+The bounding box for a schematic subpart is not (correctly) determined by ALL of the child elements of the svg subpart group.  Text elements are being clipped at the top, bottom, and right of an example element in the schematic view.  The content DOES get exported to svg, **iff** some other content on the view extends the bounding box far enough.
+
+A work around (not fix), is to include some other invisible graphics in the subparts, to get the bounding box to include the text.  My failing sample has extra text making it easy to see the clipping.  However, if the "relay" text element is removed from the "switch" subpart, then the "8" pin label text gets clipped instead.
+
+### automatic text adjustment for rotated schematic parts not working well
+
+#### document (and report) against core parts
+
+* 941 relay
+  * schematic view
+    * rotate seems to work
+    * flip horizontally or vertical are both messing up text positioning
+      * orientation looks correct, but offsets are often wrong, with no obvious pattern.
+    * interaction with the "text-anchor" properties added to get better SVG export results?
+  * Schematic View ¦ Export ¦ as Image ¦ SVG…
+    * no flip or rotate of text seems to be done
+      * now that using text-anchor property, at least the SVG export text is not moving
+
+### Export ¦ as Image ¦ SVG… is dropping simple logo text
+
+* missing?
+* font-size 0?
+* converted from text to g element?
